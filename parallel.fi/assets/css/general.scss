@@ -1,0 +1,78 @@
+//default colors 
+$bg: #1B1C1D;
+$green :#4FFFC0;
+$pink: #D22F79;
+$white:#fff;
+$grey: #F4F1EE;
+
+.pink {
+	color:$pink;
+}
+.green {
+	color:$green;
+}
+.white {
+	color:$white;
+}
+
+body {
+	background:$bg;
+	color:$white;
+}
+
+svg, main, path {
+	will-change: transform;
+}
+
+section {
+	padding:100px 0px;
+	@extend %sizing;
+	@include mobile {
+		padding:50px 0px;
+	}
+}
+
+
+
+
+.btn {
+	&.outline {
+		border:1px solid $green;
+		font-size:$link;
+		color:$green;
+		padding:10px 20px;
+		@include mobile {
+			font-size:15px;
+			padding:8px 16px;
+		}
+
+		@include hover(all,0.5s) {
+			background:$green;
+			color:$white;
+		}
+		
+	}
+	&.solid {
+		@extend %inline;
+		font-size:22px;
+		background:$green;
+		color:$bg;
+		padding:15px 35px;
+
+		@include mobile {
+			font-size:15px;
+			padding:8px 16px;
+		}		
+
+		@include hover(all,0.5s) {
+			background:$pink;
+			color:#fff;
+		}
+		&.pinker {
+			background:$pink;
+			@include hover(all,0.5s) {
+				background:$green;
+			}			
+		}		
+	}
+}

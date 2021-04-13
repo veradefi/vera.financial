@@ -1,0 +1,76 @@
+@mixin radius($size) { //border radius crossbrowser
+	-webkit-border-radius: $size; 
+	-moz-border-radius: $size; 
+	border-radius: $size; 
+}
+
+@mixin opacity($opacity) { //opacity crossbrowser
+	-moz-opacity: $opacity;
+	-khtml-opacity: $opacity;
+	opacity: $opacity;
+}
+
+@mixin boxshadow(){ //boxshadow crossbrowser
+	-webkit-box-shadow: 0px 13px 17px -9px rgba(0,0,0,0.28);
+	-moz-box-shadow: 0px 13px 17px -9px rgba(0,0,0,0.28);
+	box-shadow: 0px 13px 17px -9px rgba(0,0,0,0.28);
+}
+
+@mixin hover($e,$t){
+	-webkit-transition: $e $t ease;
+    transition: $e $t ease;
+    &:hover {
+		@media only screen and (min-width: 1024px) {
+			@content;
+		}    
+	}
+}
+
+
+
+%sizing {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+%full {
+	max-width:100%;
+	width:100%;
+}
+
+%inline {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+%centerXY{
+	top:50%;
+	left:50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+%centerX {
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);	
+}
+
+%centerY {
+	top:50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);	
+}
+
+
+%indent {
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    text-indent: 100%;
+    white-space: nowrap;
+    display: block;
+}
