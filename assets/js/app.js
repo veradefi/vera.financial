@@ -17,25 +17,25 @@ let d 		  	= document,
 
 
 
-	function isView(el) {
-	    const rect = el.getBoundingClientRect();
-	    return (
-	        rect.top >= 0 &&
-	        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight));
-	}
+	// function isView(el) {
+	//     const rect = el.getBoundingClientRect();
+	//     return (
+	//         rect.top >= 0 &&
+	//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight));
+	// }
 
 
-	function ar(el) {
-		isView(el) ? el.classList.add(v) : '' ;
-	}
+	// function ar(el) {
+	// 	isView(el) ? el.classList.add(v) : '' ;
+	// }
 
 
-	function visibleSvg(){
-		ar(lend);
-		ar(stake);
-		ar(padlock);
-		ar(double);
-	}
+	// function visibleSvg(){
+	// 	ar(lend);
+	// 	ar(stake);
+	// 	ar(padlock);
+	// 	ar(double);
+	// }
 
 
 
@@ -78,21 +78,21 @@ let d 		  	= document,
 
 	window.interVal = 1;
 
-	function changeClass(){		
-		window.interVal++;
+	// function changeClass(){		
+	// 	window.interVal++;
 
-		if(window.interVal == 1){
-			rotator.className = rotator.className.replace(/\bborrowing\b/g, "staking");
-		}
-		if(window.interVal == 2){
-			rotator.className = rotator.className.replace(/\bstaking\b/g, "lending");
-		}
-		if(window.interVal == 3){
-			rotator.className = rotator.className.replace(/\blending\b/g, "borrowing");
-			window.interVal = 0;
-		}
+	// 	if(window.interVal == 1){
+	// 		rotator.className = rotator.className.replace(/\bborrowing\b/g, "staking");
+	// 	}
+	// 	if(window.interVal == 2){
+	// 		rotator.className = rotator.className.replace(/\bstaking\b/g, "lending");
+	// 	}
+	// 	if(window.interVal == 3){
+	// 		rotator.className = rotator.className.replace(/\blending\b/g, "borrowing");
+	// 		window.interVal = 0;
+	// 	}
 
-	}
+	// }
 
 	function ve(emails) {
 	    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -106,10 +106,7 @@ let d 		  	= document,
 		ve(d.getElementById("mce-EMAIL").value) ? d.querySelector('.suscribe').submit() : d.getElementById("mce-EMAIL").classList.add('error') ;
 	}
 
-	rotator.classList.add('staking');
-	setInterval(changeClass, 2999);
+	// rotator.classList.add('staking');
+	// setInterval(changeClass, 2999);
 
 }
-
-
-
