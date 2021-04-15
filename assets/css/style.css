@@ -180,7 +180,7 @@ ul li a {
       font-size: 13px; } }
 
 .pink {
-  color: #e6007a; }
+  color: #e6007a !important; }
 
 .green {
   color: #e6007a; }
