@@ -1016,7 +1016,7 @@ section {
     margin: 0px 1px;
     width: 27px;
     height: 0%;
-    background: #D22F79; }
+    background: #eee3e8; }
     .svg.lend span + span {
       left: 29px;
       bottom: -20%;
@@ -1056,7 +1056,7 @@ section {
     display: block;
     width: 40px;
     height: 40px;
-    background: #D22F79;
+    background: #eee3e8;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -1079,7 +1079,7 @@ section {
       display: block;
       width: 20px;
       height: 20px;
-      background: #D22F79;
+      background: #eee3e8;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
@@ -1156,7 +1156,7 @@ section {
       .padlock__container .padlock__box__candle {
         width: 44px;
         height: 45px;
-        background: #D22F79;
+        background: #eee3e8;
         display: block;
         top: 8px;
         position: absolute;
@@ -1179,7 +1179,7 @@ section {
       height: 0px;
       left: 0px;
       bottom: 0px;
-      background: #D22F79; }
+      background: #eee3e8; }
   .padlock.visible .padlock__box__candlehide {
     animation-delay: 1s;
     -webkit-animation-name: closecandle;
@@ -1227,7 +1227,7 @@ section {
     position: absolute;
     width: 75px;
     height: 75px;
-    background: #D22F79;
+    background: #eee3e8;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%; }
@@ -2101,3 +2101,9 @@ a:hover, a:active {
           text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Set size for font awesome icons*/
+i.fal {
+  font-size: 170px;
+  margin-bottom:25px;
+}
