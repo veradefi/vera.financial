@@ -216,17 +216,21 @@ section {
     .btn.outline:hover {
       background: #e6007a;
       color: #fff; } }
+
 .btn.solid {
-  font-size: 22px;
-  background: #e6007a;
+  border-radius: 7px;
+  font-size: 20px;
+  border: 1px solid;
+  margin-right: 10px;
   color: #07393C;
-  padding: 15px 35px;
+  padding: 15px 20px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
   @media only screen and (max-width: 767px) {
     .btn.solid {
       font-size: 15px;
-      padding: 8px 16px; } }
+      padding: 8px 10px; 
+    } }
   @media only screen and (min-width: 1024px) {
     .btn.solid:hover {
       background: #e6007a;
