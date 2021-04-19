@@ -71,7 +71,7 @@ let d 		  	= document,
 			}
 	    }
 
-	    visibleSvg();
+	    // visibleSvg();
 
 	}, {passive: true});	
 
