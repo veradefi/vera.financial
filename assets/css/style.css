@@ -2216,6 +2216,7 @@ a:hover, a:active {
 
 .process-col-left {
   position: relative;
+  padding-left: 20px;
   padding-right: 80px;
 }
 
@@ -2274,12 +2275,17 @@ a:hover, a:active {
 
 .process-col-right {
   position: relative;
+  padding-right: 20px;
   padding-left: 80px;
   border-left: 3px dashed #d4e8f4;
 }
 
 .process-col-right.last {
-  border-left-color: transparent;
+  border-left-color: transparent !important;
+}
+
+.process-col-left.last {
+  border-left-color: transparent !important;
 }
 
 .process-col-right.progress {
@@ -2329,9 +2335,12 @@ a:hover, a:active {
     transform: translate(-50%, -50%);
   }
 
+  .process-col-right {
+    padding-right: 100px;
+  }
   .process-col-left {
-    padding-right: 0px;
     padding-left: 80px;
+    padding-right: 100px;
     border-left: 2px dashed #d4d6df;
   }
 
