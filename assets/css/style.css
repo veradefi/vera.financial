@@ -189,7 +189,7 @@ ul li a {
   color: #fff; }
 
 body {
-  background: #07393C;
+  background: #172026;
   color: #fff; }
 
 svg, main, path {
@@ -217,12 +217,13 @@ section {
       background: #e6007a;
       color: #fff; } }
 
+      
 .btn.solid {
   border-radius: 7px;
   font-size: 20px;
   border: 1px solid;
   margin-right: 10px;
-  color: #07393C;
+  color: #172026;
   padding: 15px 20px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
@@ -981,7 +982,7 @@ section {
     width: 100%;
     height: 100%;
     background: transparent;
-    border: 3px dashed #07393C;
+    border: 3px dashed #172026;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -1144,7 +1145,7 @@ section {
       position: relative; }
       .padlock__container .padlock__box__candlehide {
         width: 30px;
-        background: #07393C;
+        background: #172026;
         display: block;
         height: 14px;
         position: absolute;
@@ -1172,7 +1173,7 @@ section {
       .padlock__container .padlock__box__shadow {
         width: 22px;
         height: 32px;
-        background: #07393C;
+        background: #172026;
         display: block;
         top: 19px;
         position: absolute;
@@ -1239,7 +1240,7 @@ section {
     border-radius: 50%; }
   .svg.double .circletwo {
     margin-top: -50px;
-    border: 6px solid #07393C; }
+    border: 6px solid #172026; }
     .svg.double .circletwo:before {
       position: absolute;
       content: '';
@@ -1247,7 +1248,7 @@ section {
       width: 15px;
       height: 55px;
       left: 30px;
-      background: #07393C;
+      background: #172026;
       top: 48px;
       border-radius: 50px; }
 
@@ -1608,7 +1609,7 @@ a:hover, a:active {
   vertical-align: middle;
   padding: 15px 0px;
   z-index: 99;
-  background: #07393C; }
+  background: #172026; }
   @media only screen and (max-width: 1250px) {
     .header {
       max-width: 100%;
@@ -1625,7 +1626,7 @@ a:hover, a:active {
         z-index: 2;
         width: 100%;
         height: 60px;
-        background: #07393C; } }
+        background: #172026; } }
   .header__logo {
     position: absolute;
     left: 0px; }
@@ -1694,7 +1695,7 @@ a:hover, a:active {
       top: 0px;
       left: 0px;
       width: 100%;
-      background: #07393C;
+      background: #172026;
       height: 100vh;
       padding-top: 75px; } }
   .header__link {
@@ -1807,7 +1808,7 @@ a:hover, a:active {
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
-      background-color: #07393C;
+      background-color: #172026;
       -webkit-transition: background-color 0.5s ease;
       transition: background-color 0.5s ease; }
       .footer__social ul li a svg {
@@ -1897,7 +1898,7 @@ a:hover, a:active {
   overflow: hidden;
   position: relative;
   background: #F0EDEE;
-  color: #07393C; }
+  color: #172026; }
   .lighter .container {
     z-index: 2; }
   .lighter svg {
@@ -2081,6 +2082,7 @@ a:hover, a:active {
       line-height: 1.3;
       background: #fff;
       border: 1px solid #fff;
+      border-radius: 10px;
       -webkit-transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
       transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95); }
       .getintouch form .suscribe__form input.error {
@@ -2091,7 +2093,7 @@ a:hover, a:active {
           font-size: 15px; } }
       .getintouch form .suscribe__form input:focus {
         border-color: #e6007a;
-        background: #07393C;
+        background: #172026;
         color: #fff; }
     .getintouch form .suscribe__form * {
       vertical-align: middle; }
