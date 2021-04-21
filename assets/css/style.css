@@ -906,6 +906,8 @@ section {
     border-bottom: 20px solid #e6007a; }
 
 .svg.mainlist {
+  position: relative;
+  z-index: -1;
   display: inline-block;
   height: 150px;
   margin-top: 25px;
@@ -1626,7 +1628,7 @@ a:hover, a:active {
         left: 0px;
         z-index: 2;
         width: 100%;
-        height: 60px;
+        height: 80px;
         background: #172026; } }
   .header__logo {
     position: absolute;
@@ -2064,7 +2066,7 @@ a:hover, a:active {
 
 @media only screen and (max-width: 767px) {
   .getintouch {
-    padding-top: 0px; } }
+    padding-top: 25px; } }
 .getintouch h2 {
   padding: 50px 0px; }
 .getintouch form {
