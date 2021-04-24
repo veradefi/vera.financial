@@ -163,13 +163,13 @@ h3 {
       font-size: 25px; } }
 
 p {
-  font-size: 25px; }
+  font-size: 27px; }
   @media only screen and (max-width: 1250px) {
     p {
-      font-size: 20px; } }
+      font-size: 22px; } }
   @media only screen and (max-width: 767px) {
     p {
-      font-size: 17px; } }
+      font-size: 19px; } }
 
 ul li a {
   font-size: 22px; }
@@ -922,11 +922,11 @@ section {
     width: 150px;
     height: 3px;
     display: block;
-    background: #61c6ed;
+    background: #9af2c8; /*4*/
     -webkit-transition: width 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     transition: width 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95); }
     .svg.mainlist span:first-of-type {
-      /* background: #61c6ed; */
+      background: #61c6ed; /*1*/
       left: -39px;
       -webkit-animation-delay: -.1s;
       animation-delay: -.1s; }
@@ -935,13 +935,15 @@ section {
         right: -50px;
         -webkit-animation-delay: -.1s;
         animation-delay: -.1s;
-        background: #9af2c8; }
+        background: #9af2c8; /*2*/ 
+      }
         .svg.mainlist span:first-of-type + span + span {
           top: 74px;
           left: -56px;
-          background: #61c6ed;
+          background: #61c6ed; /*3*/
           -webkit-animation-delay: -.1s;
-          animation-delay: -.1s; }
+          animation-delay: -.1s; 
+        }
           .svg.mainlist span:first-of-type + span + span + span {
             top: 111px;
             right: -20px;
@@ -950,13 +952,13 @@ section {
             .svg.mainlist span:first-of-type + span + span + span + span {
               top: 148px;
               left: -47px;
-              background: #9af2c8;
+              background: #61c6ed; /*5*/
               -webkit-animation-delay: -.1s;
               animation-delay: -.1s; }
               .svg.mainlist span:first-of-type + span + span + span + span + span {
                 top: 185px;
                 right: -25px;
-                background: #61c6ed;
+                background: #9af2c8; /*6*/
                 -webkit-animation-delay: -.1s;
                 animation-delay: -.1s; }
 .svg.rounds {
@@ -2419,7 +2421,8 @@ a:hover, a:active {
 }
 
 .text-gradient {
-  background: linear-gradient(0deg, #01a1f9 0%, #29f39b 100%);
+  background-color:#9af2c8;
+  /* background: linear-gradient(0deg, #01a1f9 0%, #29f39b 100%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
