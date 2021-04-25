@@ -163,13 +163,13 @@ h3 {
       font-size: 25px; } }
 
 p {
-  font-size: 27px; }
+  font-size: 25px; }
   @media only screen and (max-width: 1250px) {
     p {
-      font-size: 22px; } }
+      font-size: 20px; } }
   @media only screen and (max-width: 767px) {
     p {
-      font-size: 19px; } }
+      font-size: 17px; } }
 
 ul li a {
   font-size: 22px; }
@@ -1606,6 +1606,8 @@ a:hover, a:active {
       .main__content__title__rotate span + span + span {
         top: 225px; }
 
+
+
 .header {
   position: fixed;
   left: 0px;
@@ -1900,8 +1902,6 @@ a:hover, a:active {
           margin-top: 0px;
           margin-bottom: 50px; } }
 
-
-
 .lighter {
   overflow: hidden;
   position: relative;
@@ -1913,7 +1913,8 @@ a:hover, a:active {
     display: block;
     margin: 0px auto; }
   .lighter p {
-    margin: 18px 0px; }
+    /* margin: 18px 0px;  */
+  }
   .lighter .grid__child:first-of-type + div {
     text-align: left; }
   @media only screen and (max-width: 980px) {
@@ -2503,3 +2504,16 @@ i.fal {
   }
  }
  
+ body {
+  padding-top: 60px;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 360px) {
+  .main {
+    padding-top: 150px;
+  }
+}
