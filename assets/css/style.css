@@ -1257,11 +1257,6 @@ section {
       top: 48px;
       border-radius: 50px; }
 
-body {
-  margin: 0px;
-  padding: 0px;
-  font-family: sans-serif; }
-
 a:hover, a:active {
   text-decoration: none; }
 
@@ -1967,7 +1962,7 @@ a:hover, a:active {
           padding-bottom: 50px; } }
   .solution__item {
     background-color: #122537;
-    padding: 45px 30px;
+    padding: 35px 30px;
     border-radius: 10px;
     display: block;
     max-width: 450px;
@@ -2490,7 +2485,7 @@ a:hover, a:active {
 
 /* Set size for font awesome icons*/
 i.fal {
-  font-size: 140px;
+  font-size: 100px;
   margin-bottom:25px;
   /* color: #41a9e0; */
   color: #41a9e0;
@@ -2498,7 +2493,7 @@ i.fal {
 
 @media only screen and (max-width: 768px){
   i.fal {
-    font-size: 70px;
+    font-size: 50px;
     margin-bottom:15px;
     color: #41a9e0;
   }
@@ -2516,4 +2511,8 @@ i.fal {
   .main {
     padding-top: 150px;
   }
+}
+
+.paragraph-small {
+  margin-bottom: 15px;
 }
