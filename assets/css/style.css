@@ -3977,7 +3977,7 @@ body {
 @media (max-width: 420px) {
   .main.lighter {
     padding-bottom: 0em;
-    height: calc(100vh + 100px);
+    height: calc(100vh + 300px);
   }
 
   .main.no-alert {
@@ -4208,6 +4208,30 @@ video {
 
 @media only screen and (max-width: 979px) {
   .main__video{
-    visibility: hidden;
+    /* visibility: hidden; */
+  }
+
+  #main__video__src {
+    width: 330px;
+    height:80%
+    
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .main.lighter {
+      padding-bottom: 0em;
+      height: calc(100vh + 475px);
+    }
+  
+  .main__video{
+    /* visibility: hidden; */
+  }
+
+  #main__video__src {
+    width: 330px;
+    height:80%
+    
   }
 }
