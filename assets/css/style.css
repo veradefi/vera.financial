@@ -2804,6 +2804,10 @@ a:active {
   background: #1ad4bf;
 }
 
+.header__link .btn.outline i {
+  padding-right:10px;
+}
+
 @media only screen and (max-width: 1024px) {
   .header__link {
     display: block;
@@ -3132,7 +3136,7 @@ a:active {
 
 .main,
 .section-hero {
-  height: 100vh;
+  height: 900px;
   /*65vh;*/
   padding: 50px 0 0 0;
   overflow: hidden;
@@ -3558,7 +3562,6 @@ a:active {
   display: flex;
   overflow: hidden;
   min-height: 800px;
-  padding-top: 100px;
   padding-bottom: 100px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -3863,6 +3866,11 @@ a:active {
   display: flex;
 }
 
+.vision-col.vision-col-right{
+  color:black;
+  background-color:white;
+}
+
 .vision-col h3,
 .vision-col h4 {
   margin: .5em 10%;
@@ -4016,6 +4024,10 @@ h4.powered-by {
 
 .cta-buttons {
   margin: 50px 0 15px 0;
+}
+
+.cta-buttons .text-icon-btn i {
+  padding-right: 10px;
 }
 
 @media only screen and (max-width: 360px) {
