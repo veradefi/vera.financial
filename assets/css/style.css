@@ -3135,7 +3135,7 @@ a:active {
 
 .main,
 .section-hero {
-  height: 100vh;
+  height: 900px;
   /*65vh;*/
   padding: 50px 0 0 0;
   overflow: hidden;
