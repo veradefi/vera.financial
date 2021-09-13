@@ -49,11 +49,14 @@ window.onload = function () {
 	}
 
 	for (const link of links) {
-		link.addEventListener("click",clickHandler);
+		link.addEventListener("click", clickHandler);
 	}
 
 	function clickHandler(e) {
 		e.preventDefault();
+		for (let x of body) {
+			x.classList.toggle('visible');
+		}
 		const href = this.getAttribute("href");
 		const offsetTop = document.querySelector(href).offsetTop;
 
