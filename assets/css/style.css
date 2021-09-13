@@ -2042,6 +2042,7 @@ a:active {
 
 .main__content__news-banner {
   margin-bottom: 20px;
+  width: 1000px;
 }
 
 .main__content__news-banner .label::before {
