@@ -2734,6 +2734,7 @@ a:active {
   position: relative;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 767px) {
