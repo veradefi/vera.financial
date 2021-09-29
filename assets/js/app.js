@@ -108,12 +108,10 @@ window.onload = function () {
 		this.parentElement.parentElement.classList.add('no-alert');
 	}
 
-	submitForm.onclick = function (e) {
-		e.preventDefault();
-		ve(d.getElementById("mce-EMAIL").value) ? d.querySelector('.suscribe').submit() : d.getElementById("mce-EMAIL").classList.add('error');
-	}
-
-
+	// submitForm.onclick = function (e) {
+	// 	e.preventDefault();
+	// 	ve(d.getElementById("mce-EMAIL").value) ? d.querySelector('.suscribe').submit() : d.getElementById("mce-EMAIL").classList.add('error');
+	// }
 
 
 	// rotator.classList.add('staking');
