@@ -54,26 +54,24 @@
 		</div>
 		<nav class="header__navigation">
 			<ul>
-				<li><a href="#about" class="scroller">About</a></li>
-
 				<li>
 					<div class="dropdown">
-						<a href="http://coingecko.com/en/coins/vera">$VERA Token</a>
-						<div class="dropdown-content">
-							<a href="https://www.gate.io/en/trade/VERA_USDT">Trade on Gate.io</a>
-							<a href="https://www.dextools.io/app/ether/pair-explorer/0xb836969acaaa7ed9505d650aaea16d07488fe6c0">Trade on Uniswap</a>
-							<a href="https://www.dextools.io/app/bsc/pair-explorer/0xe875eae797a528c19c5b95b55da0b413413170ce">Trade on Pancake</a>	
-							<a href="https://exchange.chainswap.com">ETH/BSC Token Swap</a>
-						</div>
+						<a href="http://coingecko.com/en/coins/vera" target="_blank">$VERA Token</a>
+						<ul class="dropdown-content">
+							<li class="gate"><a href="https://www.gate.io/en/trade/VERA_USDT" target="_blank">Trade on Gate.io</a></li>
+							<li class="uniswap"><a href="https://www.dextools.io/app/ether/pair-explorer/0xb836969acaaa7ed9505d650aaea16d07488fe6c0" target="_blank">Trade on Uniswap</a></li>
+							<li class="pancakeswap"><a href="https://www.dextools.io/app/bsc/pair-explorer/0xe875eae797a528c19c5b95b55da0b413413170ce" target="_blank">Trade on Pancake Swap</a></li>
+							<li class="chainswap"><a href="https://exchange.chainswap.com" target="_blank">ETH/BSC Token Swap</a></li>
+						</ul>
 					</div>
 				</li>
 
 				<!-- submenu - extra credit- add exchange logos as list items - see https://coinmarketcap.com/currencies/vera-defi/ -->
-
+				<li><a href="https://docs.vera.financial/faq">FAQ</a></li>
+				<li><a href="https://docs.vera.financial">Docs</a></li>								
+				<li><a href="https://docs.vera.financial/roadmap/">Roadmap</a></li>
 				<li><a href="https://blog.vera.financial">Blog</a></li>
-				<li><a href="#community" class="scroller">Community</a></li>
-				<li><a href="https://docs.vera.financial">Developers</a></li>								
-				<li><a href="#roadmap" class="scroller">Roadmap</a></li>
+				<li><a href="#community" class="scroller">Community</a></li>				
 			</ul>
 		</nav>
 		<div class="header__link">
@@ -97,11 +95,11 @@
 
 			<!--<video src="assets/img/hero.mp4" autoplay loop playsinline muted></video>-->
 
-			<div class="alert">
+			<!--<div class="alert">
 				<span id="closebtn" class="closebtn">&times;</span>
 				<p><strong>⚠️ WARNING:</strong> We'll <u>never</u> give you nor ask you for tokens, cryptos, or NFTs
 					from our website or social media. Avoid scams, stay safe!</p>
-			</div>
+			</div>-->
 
 			<div class="container">
 				<div class="grid">
@@ -181,7 +179,7 @@
 
 
 							<div class="row cta-buttons">
-								<a href="http://blog.vera.financial/" target="_blank" class="btn solid text-icon-btn">
+								<a href="http://docs.vera.financial/" target="_blank" class="btn solid text-icon-btn">
 									<i class="fas fa-book"></i>
 									Learn more</a>
 								<!--<a href="https://docs.vera.financial/" target="_blank" class="btn solid">
@@ -307,18 +305,18 @@
 						everyone everywhere.</h4>
 				</div>
 			</div>
+		</section>
 			<!-- <div id="bg">
 			  <div class="bg circle"></div><div class="bg circle"></div><div class="bg circle"></div><div class="bg circle"></div><div class="bg circle"></div><div class="bg triangle"></div><div class="bg triangle"></div><div class="bg triangle"></div><div class="bg triangle"></div><div class="bg triangle"></div><div class="bg circle"></div><div class="bg circle"></div><div class="bg circle"></div><div class="bg circle"></div><div class="bg circle"></div><div class="bg triangle"></div><div class="bg triangle"></div><div class="bg triangle"></div><div class="bg triangle"></div><div class="bg triangle"></div>
 			</div> -->
-		</section>
-		<section class="built">
+
+		<!--<section class="built">
 			<div class="container">
 				<h2>Built on <strong class="text-gradient">Polkadot</strong>.</h2>
-				<!-- <h1>dsasas asd asd </h1> -->
 				<img alt="A solution for everyone" class="solution__image" width="960" height="760"
 					src="assets/img/blockchain.svg">
 			</div>
-		</section>
+		</section>-->
 		<!-- <section class="modular">
 			<div class="container">
 				<h2>Learn More About Our product: </h2>
@@ -348,7 +346,7 @@
 			</div>
 		</section> -->
 
-		<!-- Start : Roadmap  -->
+		<!-- Start : Roadmap  
 		<section class="lighter" id="roadmap">
 			<div id="timeline" class="section-roadmap">
 				<div class="container">
@@ -445,16 +443,16 @@
 							<div class="process-col-left progress">
 								<div class="process-block">
 									<div class="process-triangle flipped"></div>
-									<h3 class="heading-timeline">Setting Up the Launch Pad</h3>
+									<h3 class="heading-timeline">Launch</h3>
 									<div class="timeline-line"></div>
-									<p class="paragraph-small">Release PoC demo​</p>
-									<p class="paragraph-small">Begin global customer and partnership acquisition
+									<p class="paragraph-small">IDO, DEX, and CEX listing</p>
+									<p class="paragraph-small">Begin global partnership acquisition
 										campaign​</p>
 
 								</div>
 								<div class="process-number-wrapper flipped">
 									<div class="number-timeline">Q3 2021</div>
-									<div class="process-number-title">Setting Up <br>the Launch <br> Pad</div>
+									<div class="process-number-title">Launch</div>
 									<div class="process-dot progress"></div>
 								</div>
 							</div>
@@ -465,16 +463,14 @@
 							<div class="process-col-right">
 								<div class="process-number-wrapper">
 									<div class="number-timeline">Q4 2021</div>
-									<div class="process-number-title">Pre-Launch</div>
+									<div class="process-number-title">#BUIDL</div>
 									<div class="process-dot"></div>
 								</div>
 								<div class="process-block">
 									<div class="process-triangle"></div>
-									<h3 class="heading-timeline">Pre-Launch</h3>
+									<h3 class="heading-timeline">#BUIDL</h3>
 									<div class="timeline-line"></div>
-									<p class="paragraph-small">Release token design paper​</p>
-									<p class="paragraph-small">Polkadot Lending App ​</p>
-									<p class="paragraph-small">Polkadot Leasing App​</p>
+									<p class="paragraph-small">We're updating the timeline, check back soon!</p>
 
 								</div>
 							</div>
@@ -485,18 +481,15 @@
 							<div class="process-col-left last">
 								<div class="process-block">
 									<div class="process-triangle flipped"></div>
-									<h3 class="heading-timeline">Future (TBD)</h3>
+									<h3 class="heading-timeline">Future</h3>
 									<div class="timeline-line"></div>
-									<p class="paragraph-small">Integrations with other DeFi platforms​</p>
-									<p class="paragraph-small">Vera testnet launch​</p>
-									<p class="paragraph-small">Integrations with layer-1 blockchains​</p>
-									<p class="paragraph-small">Vera mainnet launch</p>
-									<p class="paragraph-small">Vera cross-chain implementation</p>
+									<p class="paragraph-small">We're updating the timeline, check back soon!</p>
+
 
 								</div>
 								<div class="process-number-wrapper flipped">
-									<div class="number-timeline"> Q1 2022+</div>
-									<div class="process-number-title">Future (TBD)</div>
+									<div class="number-timeline">2022</div>
+									<div class="process-number-title">Future</div>
 									<div class="process-dot"></div>
 								</div>
 							</div>
@@ -505,7 +498,7 @@
 				</div>
 			</div>
 			</div>
-		</section>
+		</section>-->
 		<section class="gradient" id="community">
 			<div class="container">
 				<div class="grid">

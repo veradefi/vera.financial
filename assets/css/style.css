@@ -2636,8 +2636,6 @@ a:active {
   top: 225px;
 }
 
-
-
 .header {
   position: fixed;
   left: 0px;
@@ -4254,17 +4252,59 @@ video {
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+ul.dropdown-content {
   display: none;
   position: absolute;
   background-color: #F0EDEE;
   min-width: 260px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  padding: 0;
+}
+
+.header ul.dropdown-content {
+  text-align: left;
+}
+
+ul.dropdown-content li {
+  padding: 0;
+  width: 100%;
+}
+
+ul.dropdown-content li.gate a {
+  background: url('/assets/img/icons/gate.io.svg') no-repeat; 
+  background-position: 6px, 0px;
+  background-size: 36px 36px;     
+  background-origin: padding-box;
+  padding-left: 48px;
+}
+
+ul.dropdown-content li.uniswap a {
+  background: url('/assets/img/icons/uniswap.svg') no-repeat;
+  background-position: 8px, 0px;
+  background-size: 28px 28px; 
+  background-origin: padding-box;
+  padding-left: 48px;  
+}
+
+ul.dropdown-content li.pancakeswap a {
+  background: url('/assets/img/icons/pancakeswap.svg') no-repeat; 
+  background-position: 14px, 0px;
+  background-size: 20px 20px;   
+  background-origin: padding-box;
+  padding-left: 48px;  
+}
+
+ul.dropdown-content li.chainswap a {
+  background: url('/assets/img/icons/chainswap.png') no-repeat; 
+  background-position: 14px, 0px;
+  background-size: 20px 20px;   
+  background-origin: padding-box;
+  padding-left: 48px;  
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+ul.dropdown-content li a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
