@@ -67,6 +67,9 @@
 				</li>
 
 				<!-- submenu - extra credit- add exchange logos as list items - see https://coinmarketcap.com/currencies/vera-defi/ -->
+
+				<li><a href="javascript:void(0)" onclick="getVera()">Get Vera</a></li>
+				<li><a href="https://docs.vera.financial/faq">FAQ</a></li>
 				<li><a href="https://docs.vera.financial/faq">FAQ</a></li>
 				<li><a href="https://docs.vera.financial">Docs</a></li>								
 				<li><a href="https://docs.vera.financial/roadmap/">Roadmap</a></li>
@@ -546,6 +549,32 @@
 		</footer>
 	</main>
 
+
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+		  <span class="close">&times;</span>
+		  <p>
+			<iframe
+			src="https://app.uniswap.org/#/swap?outputCurrency=0xd7f0cc50ad69408ae58be033f4f85d2367c2e468&inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+			height="660px"
+			width="100%"
+			style="
+			  border: 0;
+			  margin: 0 auto;
+			  display: block;
+			  border-radius: 10px;
+			  max-width: 600px;
+			  min-width: 300px;
+			"
+			id="myId"
+			></iframe>
+		  </p>
+		</div>
+	  
+	  </div>
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GJ78PKBEF"></script>
 	<script>
@@ -554,6 +583,28 @@
 		gtag('js',new Date());
 
 		gtag('config','G-8GJ78PKBEF');
+	</script>
+
+	<script type="text/javascript">
+		var modal = document.getElementById("myModal");
+		var span = document.getElementsByClassName("close")[0];
+
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+
+		function getVera() {
+			var modal = document.getElementById("myModal");
+			modal.style.display = "block";
+
+			console.log("get-vera-called");
+		}
 	</script>
 
 </body>
