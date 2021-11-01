@@ -5,8 +5,6 @@
     jQuery(document).ready(function ($) {
 
 
-
-
         //------------ Hero slider -------------
 
         $('.slider_inner').owlCarousel({
@@ -79,6 +77,42 @@
 
         });
 
+
+        $('.slick.marquee.box_group1').slick({
+            speed: 4900,
+            autoplay: true,
+            autoplaySpeed: 0,
+            centerMode: true,
+            cssEase: 'linear',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: true,
+            infinite: true,
+            initialSlide: 1,
+            arrows: false,
+            buttons: true
+          });
+
+          $('.box_group1').hover(function(){
+            $('.slick.marquee.box_group1').slick('slickPause');;
+          });
+
+
+          $('.slick.marquee.box_group2').slick({
+            speed: 5000,
+            autoplay: true,
+            autoplaySpeed: 500,
+            centerMode: true,
+            cssEase: 'linear',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: true,
+            infinite: true,
+            initialSlide: 1,
+            arrows: false,
+            pauseOnHover: true,
+            buttons: true
+          });
 
 
 

@@ -40,10 +40,10 @@
     padding: 10px;
 }
 .banner_bg_img {
-    min-height: 700px;
+    min-height:1040px;
 }
 .hero_banner {
-    min-height: 660px;
+    min-height: 1040px;
 }
 .mt-100 {
     margin-top: 35px;
@@ -57,9 +57,21 @@
     margin: 0px auto;
 	clear: both;
 }
+.icon_be {
+    position: absolute;
+    right: 21px;
+	width: 200px;
+	bottom: 112px;
+}
+.icon_be img {
+    width: 25%;
+}
 .box_group {
-    margin-left: 0;
-    clear: both;
+    width: 100%;
+    min-height: 137px;
+    position: relative;
+    left: 0;
+    margin-left: -20px;
 }
 .box_group_2 {
     margin-left: 0px;
@@ -68,13 +80,16 @@
     padding-top: 20px;
 }
 .coin_img {
-    display: none;
+	width: 41%;
+	top: -92px;
+	right: 67px;
 }
 .vera_sec {
     padding-bottom: 50px;
+	min-height: 550px;
 }
 .coming_nft img {
-	width:70%;
+	width:85%;
 }
 .coming_nft {
   width: 100%;
@@ -83,10 +98,16 @@
 }
 .globad {
     width: 100%;
-    min-height: 550px;
+    min-height: 400px;
     background: #071B27;
     margin-top: 50px;
     
+}
+.txt_box br {
+    display: none;
+}
+.txt_box {
+    padding: 0px 15px;
 }
 .ecosystem {
     margin-top: 70px;
@@ -112,6 +133,18 @@
 }
 .faq {
     margin-top: 70px;
+}
+.top_vido {
+    height: 250px;
+    width: 510px;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+.mt-20 br {
+    display: none;
+}
+.txt1 br {
+    display: none;
 }
 }
  
@@ -213,22 +246,28 @@
 .faq {
     margin-top: 70px;
 }
+.mt-20 br {
+    display: none;
+}
+.txt1 br {
+    display: none;
+}
     
 }
 
 
 
-
-
-/* SM Small Device :550px. */
-@media only screen and (min-width: 374px) and (max-width: 767px) {
+@media only screen and (min-width: 412px) and (max-width: 767px) {
 .banner_bg_img {
     top: -70px;
 }
 .mt-120 {
     margin-top: 40px;
 }
-
+.navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+    text-align: center;
+}
  .hero_banner {
     text-align: center;
 }
@@ -243,7 +282,7 @@
     padding: 10px;
 }
 .banner_bg_img {
-    min-height: 660px;
+   min-height: 915px;
 }
 .hero_banner {
     min-height: 660px;
@@ -271,7 +310,9 @@
     padding-top: 20px;
 }
 .coin_img {
-    display: none;
+    display: block;
+    width: 22%;
+    top: -78px;
 }
 .vera_sec {
     padding-bottom: 50px;
@@ -286,7 +327,7 @@
 }
 .globad {
     width: 100%;
-    min-height: 550px;
+    min-height: 605px;
     background: #071B27;
     margin-top: 50px;
     
@@ -315,5 +356,188 @@
 }
 .faq {
     margin-top: 70px;
+}
+.video_ing img {
+    padding-left: 130px;
+    display: none;
+}
+.box_group {
+    width: 100%;
+    min-height: 77px;
+    position: relative;
+    left: 0;
+    margin-left: -20px;
+    margin-top: 15px;
+}
+.icon_be {
+    position: absolute;
+	right: 42px;
+	width: 200px;
+	bottom: 227px;
+	top: 62px;
+}
+.icon_p img {
+    width: 30%;
+}
+.mt-20 br {
+    display: none;
+}
+.txt1 br {
+    display: none;
+}
+.top_vido {
+    width: 340px;
+    margin-top: 40px;
+}
+.pt-90 {
+    padding-top: 50px;
+}
+.comu_img {
+    position: relative;
+    top: -10px;
+}
+}
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 320px) and (max-width: 411px) {
+.banner_bg_img {
+    top: -70px;
+}
+.mt-120 {
+    margin-top: 40px;
+}
+.navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+    text-align: center;
+}
+ .hero_banner {
+    text-align: center;
+}
+.dark-custom {
+    background: #0B0C13;
+}
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+    border-top: 1px solid #222;
+    padding: 10px;
+}
+.banner_bg_img {
+   min-height: 1010px;
+}
+.hero_banner {
+    min-height: 660px;
+}
+.mt-100 {
+    margin-top: 35px;
+}
+.card {
+    margin: 10px;
+}
+.box {
+    width: 100%;
+    min-height: 115px;
+    margin: 0px auto;
+	clear: both;
+}
+.box_group {
+    margin-left: 0;
+    clear: both;
+}
+.box_group_2 {
+    margin-left: 0px;
+}
+.pt-170 {
+    padding-top: 20px;
+}
+.coin_img {
+    display: block;
+    width: 22%;
+    top: -78px;
+}
+.vera_sec {
+    padding-bottom: 50px;
+}
+.coming_nft img {
+	width:70%;
+}
+.coming_nft {
+  width: 100%;
+  min-height: 350px;
+  margin-top: 150px;
+}
+.globad {
+    width: 100%;
+    min-height: 605px;
+    background: #071B27;
+    margin-top: 50px;
+    
+}
+.ecosystem {
+    margin-top: 70px;
+}
+.no_bg.collapsed {
+    text-align: left;
+}
+.no_bg {
+    text-align: left;
+}
+.footer {
+    text-align: center;
+	 padding: 50px 0px 0px;
+}
+.banner_bg {
+    top: -40px;
+}
+.footer h3 {
+    margin-top: 30px;
+}
+.mt-150 {
+    margin-top: 70px;
+}
+.faq {
+    margin-top: 70px;
+}
+.video_ing img {
+    padding-left: 130px;
+    display: none;
+}
+.box_group {
+    width: 100%;
+    min-height: 77px;
+    position: relative;
+    left: 0;
+    margin-left: -20px;
+    margin-top: 15px;
+}
+.icon_be {
+    position: absolute;
+	right: 42px;
+	width: 200px;
+	bottom: 227px;
+	top: 62px;
+}
+.icon_p img {
+    width: 30%;
+}
+.mt-20 br {
+    display: none;
+}
+.txt1 br {
+    display: none;
+}
+.top_vido {
+    width: 340px;
+    margin-top: 40px;
+}
+.comu_img {
+    position: relative;
+    top: -10px;
+}
+.faq {
+    width: 100%;
+    min-height: 460px;
+    margin-top: 150px;
 }
 }

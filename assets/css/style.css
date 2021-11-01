@@ -35,7 +35,26 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-
+.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{  
+			background:none;
+	}
+	.navbar .nav-item:hover .dropdown-menu { 
+		display: block;
+		background: transparent;
+		padding: 10px 0px;
+		margin-right: 0;
+		left: -8px;
+		}
+		.dropdown-item:focus, .dropdown-item:hover {
+    color: #0AB3E5;
+    background-color: transparent;
+}
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+	
+.top_vido {
+	height:250px;width:620px;margin-top: 100px;
+}
 .btn-custom {
   background: #0AB3E5;
   border-radius: 50px;
@@ -83,6 +102,11 @@ body {
     transition: .3s;
     color: #fff;
 }
+.vido_btn {
+	position: absolute;
+	top: 234px;
+	right: 32%;
+}
 .color_white {
   color: #fff;
 }
@@ -95,6 +119,27 @@ body {
 .color_gren {
   color: #20E2B0;
 }
+ .marquee .inner {
+        position: relative;
+        width: 100%;
+        display: flex;
+        
+      }
+ .marquee .inner > * {
+         white-space:normal;
+        padding: 0 10px;
+      }
+	  
+	  .marquees .inners {
+        position: relative;
+        width: 100%;
+        display: flex;
+        
+      }
+ .marquees .inners > * {
+         white-space:normal;
+         padding: 0  10px;
+      }
 .lowfi {
   color: #54585C;
   letter-spacing: 5px;
@@ -120,7 +165,7 @@ body {
   width: 100%;
   position: relative;
   color: #fff;
-  min-height: 900px;
+  min-height: 740px;
 }
 .banner_bg_img {
   position: absolute;
@@ -133,8 +178,9 @@ body {
   display: block;
 }
 .hero_banner h1 {
-font-weight: 900;
+font-weight: 800;
 color: #fff;
+font-family: 'Nunito Sans', sans-serif;
 
 }
 .video_ing img {
@@ -160,9 +206,9 @@ color: #fff;
   margin-left: 30px;
 }
 .coming_nft {
-  width: 100%;
-  min-height: 550px;
-  margin-top: 200px;
+    width: 100%;
+    min-height: 368px;
+    margin-top: 200px;
 }
 /* Header area css end  */
 /*Vera for every one*/
@@ -183,14 +229,17 @@ color: #fff;
   top: -92px;
 }
 .coin_img {
-  position: absolute;
-  right: 20%;
-  bottom: 45%;
+    position: absolute;
+    right: 135px;
+    bottom: 192px;
+    width: 150px;
+    height: auto;
 }
 .txt_box {
   color: #fff;
   padding: 0px 40px;
   margin-top: 100px;
+  position: relative;
 }
 .txt_box h3 {
   font-weight: 800;
@@ -205,6 +254,16 @@ color: #fff;
   background: #071B27;
   margin-top: 150px;
   color: #fff;
+}
+.comu_img {
+    position: relative;
+    top: 20px;
+}
+.icon_be {
+    position: absolute;
+    right: 196px;
+    width: 200px;
+    bottom: 227px;
 }
 button.no_bg.collapsed:hover {
   color:#0AB3E5;
