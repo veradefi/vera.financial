@@ -316,11 +316,9 @@ p.faq_select:hover {
     display: inherit;
 }
 .card-body {
-background: transparent; 
 padding-left: 0;
 padding-right: 0; 
-border: 1px #999 solid;
-border-radius: 0px;
+border: 1px #dbdbdb solid;
 }
 .box img {
   width: 100%;
