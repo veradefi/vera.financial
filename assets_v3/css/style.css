@@ -216,6 +216,8 @@ a:hover .btn-custom-outline {
 .card {
     border-radius: 1.5rem;
     overflow: hidden;
+    background: #fbfdff;
+    text-decoration: none; 
 }
 
 
@@ -385,6 +387,21 @@ p.faq_select:hover {
     border: 1px #dbdbdb solid;
 }
 
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #0AB3E5;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-text:hover {
+    color: #1868b7;
+}
+
 .box img {
     width: 100%;
 }
@@ -509,4 +526,8 @@ img[usemap] {
     height: auto;
     max-width: 100%;
     width: auto;
+}
+
+a.nft-link {
+  text-decoration: none;
 }
