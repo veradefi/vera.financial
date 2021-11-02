@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&family=Nunito:wght@200&family=Poppins:wght@100&display=swap');
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px;
+  color: #000;
+  font-weight: 600;
+}
+
+body {
+  background: #fff;
+  color: #1d1d1f;
+  font-weight: 400;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#navmenu > ul > li > ul > li > a:hover,
+ul.menu_btm li a:hover { color: #28F09F !important; }
+
+.display-6 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.display-8 {
+  font-size: 1em;
+}
+
+.navbar .nav-item .dropdown-menu{ display: none; }
+  .navbar .nav-item:hover .nav-link{  
+      background:none;
+  }
+
+.nav-link:focus, .nav-link:hover {
+  color: #28F09F;
+}
+
+  .navbar .nav-item:hover .dropdown-menu { 
+    display: block;
+    background: transparent;
+    padding: 10px 0px;
+    margin-right: 0;
+    left: -8px;
+    }
+    .dropdown-item:focus, .dropdown-item:hover {
+    color: #0AB3E5;
+    background-color: transparent;
+}
+  .navbar .nav-item .dropdown-menu{ margin-top:0; }
+  
+.btn-custom {
+  background: #0AB3E5;
+  border-radius: 50px;
+  padding: 10px 40px;
+  color: #fff;
+  font-weight: 600;
+  border:2px solid #0AB3E5;
+}
+.btn-customr{
+  background: #0AB3E5;
+  border-radius: 50px;
+  padding: 10px 40px;
+  color: #fff;
+  font-weight: 600;
+  border:2px solid #0AB3E5;
+}
+.btn-customr:hover {
+   background:transparent;
+    transition: .3s;
+    color: #0AB3E5;
+   border:2px solid #0AB3E5;
+}
+.btn-custom-outline {
+  background: none;
+  border:2px solid #0AB3E5;
+  border-radius: 50px;
+  padding: 10px 40px;
+  color: #0AB3E5;
+  font-weight: 600;
+}
+
+a:hover .btn-custom-outline {
+  color: #fff;
+}
+
+.btn-no-bg {
+  background: transparent;
+  color: #0AB3E5;
+}
+.btn:hover {
+    color: #fff;
+}
+.btn-custom-outline:hover {
+    background: #0AB3E5;
+    transition: .3s;
+    color: #000;
+}
+.btn-custom:hover {
+    background: transparent;
+  border:2px solid #0AB3E5;
+    transition: .3s;
+    color: #fff;
+}
+.vido_btn {
+  position: absolute;
+  top: 234px;
+  right: 32%;
+}
+.color_white {
+  color: #fff;
+}
+.color_white li {
+  padding: 0px 10px;
+}
+.color_white a {
+  color: #fff;
+}
+.color_gren {
+  color: #20E2B0;
+}
+ .marquee .inner {
+        position: relative;
+        width: 100%;
+        display: flex;
+        
+      }
+ .marquee .inner > * {
+         white-space:normal;
+        padding: 0 10px;
+      }
+    
+    .marquees .inners {
+        position: relative;
+        width: 100%;
+        display: flex;
+        
+      }
+ .marquees .inners > * {
+         white-space:normal;
+         padding: 0  10px;
+      }
+.lowfi {
+  color: #999;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.font_w {
+  font-weight: 800;
+  padding: 0px;
+  margin: -15px 0 0;
+}
+.card {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+/* Header area css start  */
+.dark-custom {
+  background:transparent ;
+}
+
+/* Hero banner */
+.hero_banner {
+  width: 100%;
+  position: relative;
+  color: #fff;
+  min-height: 740px;
+}
+
+.hero_banner h3 {
+  color: #999;
+  margin-bottom: 50px;
+  font-size: 1.3em;
+}
+
+.banner_bg_img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  min-height: 800px;
+  z-index: -1;
+  display: block;
+}
+.hero_banner h1 {
+font-weight: 800;
+color: #fff;
+font-family: 'Nunito Sans', sans-serif;
+
+}
+.video_ing img {
+  padding-left: 130px;;
+}
+.box_group {
+  width: 100%;
+  min-height: 250px;
+  position: relative;
+  left: 0;
+  margin-left:-20px;
+  clear: both;
+}
+
+.box {
+  width: 32%;
+  min-height: 250px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.box_group_2 {
+  margin-left: 30px;
+}
+.coming_nft {
+    width: 100%;
+    min-height: 368px;
+    margin-top: 200px;
+}
+/* Header area css end  */
+/*Vera for every one*/
+.vera_sec {
+  width: 100%;
+  min-height: 850px;
+  position: relative;
+ top: 70px;
+ clear: both;
+ background: #05141c;
+}
+.vera_sec h2{
+  font-weight: 800;
+}
+.banner_bg {
+  position: absolute;
+  z-index: -1;
+  top: -92px;
+}
+.coin_img {
+    position: absolute;
+    right: 135px;
+    bottom: 192px;
+    width: 150px;
+    height: auto;
+}
+.txt_box {
+  color: #fff;
+  padding: 0px 40px;
+  margin-top: 100px;
+  position: relative;
+}
+.txt_box h3 {
+  font-weight: 800;
+  color: #fff;
+}
+.ecosystem {
+  margin-top: 160px;
+}
+.globad {
+  width: 100%;
+  min-height: 550px;
+  background: #071B27;
+  margin-top: 150px;
+  color: #fff;
+}
+.comu_img {
+    position: relative;
+    top: 20px;
+}
+.icon_be {
+    position: absolute;
+    right: 196px;
+    width: 250px;
+    bottom: 227px;
+}
+
+.icon_be a {
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+button.no_bg.collapsed:hover {
+  color:#0AB3E5;
+}
+.text-right{
+  float:right;
+}
+p.faq_select:hover {
+    color: #0AB3E5;
+  transition:.3s;
+}
+.border_b {
+    width: 100%;
+    height: 1px;
+    background: #CCCCD1;
+    display: inherit;
+}
+.card-body {
+background: transparent; 
+padding-left: 0;
+padding-right: 0; 
+}
+.box img {
+  width: 100%;
+}
+.faq {
+  width: 100%;
+  min-height: 550px;
+  margin-top: 150px;
+}
+button.no_bg {
+  border: none;
+  background: transparent;
+
+}
+.card {
+  border: none;
+}
+.footer {
+  width: 100%;
+  min-height: 390px;
+  background: #05161F;
+  color: #fff;
+  padding: 100px 0px 0px;
+}
+.footer h3 {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+}
+.soial_media {
+  display: inline-block;
+}
+ul.soial_media {
+  margin: 0;
+  padding: 0;
+}
+ul.soial_media li {
+  display: inline-block;
+  padding: 0;
+  margin-right: 5px;
+  margin-left: 0;
+}
+.menu_btm {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+ul.menu_btm li {
+  list-style: none;
+  padding: 5px 0;
+}
+ul.menu_btm li a {
+  text-decoration: none;
+ color: #fff;
+}
+.footer p {
+  font-size: 16px;
+  color: #6e6e6e;
+}
+
+
+
+ul li.coingecko a {
+  background: url('/assets_v3/img/icons/coingecko.png') no-repeat; 
+  background-position: 8px, 0px;
+  background-size: 28px 28px;     
+  background-origin: padding-box;
+  padding-left: 48px;
+}
+
+ul li.coinmarketcap a {
+  background: url('/assets_v3/img/icons/coinmarketcap.png') no-repeat;
+  background-position: 8px, 0px;
+  background-size: 28px 28px; 
+  background-origin: padding-box;
+  padding-left: 48px;  
+}
+
+ul li.chainswap a {
+  background: url('/assets_v3/img/icons/chainswap.png') no-repeat; 
+  background-position: 8px, 0px;
+  background-size: 28px 28px;   
+  background-origin: padding-box;
+  padding-left: 48px;  
+}
+
+.embed-responsive {
+  // position: initial;
+  /* if set to initial or anything other than relative is re-appears but is no longer responsive */
+}
