@@ -1,8 +1,5 @@
 /* XL Device :1200px. */
 @media (min-width: 1200px) and (max-width: 1449px) {
-
- 
-    
 }
 
 /* LG Device :992px. */
@@ -148,18 +145,16 @@
 }
 }
  
-
 /* SM Small Device :320px. */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-    
-    .banner_bg_img {
+.banner_bg_img {
     top: -70px;
 }
 .mt-120 {
     margin-top: 40px;
 }
 
- .hero_banner {
+.hero_banner {
     text-align: center;
 }
 .dark-custom {
@@ -256,7 +251,6 @@
 }
 
 
-
 @media only screen and (min-width: 412px) and (max-width: 767px) {
 .banner_bg_img {
     top: -70px;
@@ -282,7 +276,7 @@
     padding: 10px;
 }
 .banner_bg_img {
-   min-height: 915px;
+    min-height: 1020px;
 }
 .hero_banner {
     min-height: 660px;

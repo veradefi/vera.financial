@@ -2,6 +2,12 @@
 
 /* Base CSS */
 
+.mainImage {
+    background-image: url(../img/bg_effect.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .alignleft {
     float: left;
     margin-right: 15px;
