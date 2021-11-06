@@ -90,15 +90,22 @@
                         <a href="#featured"><button class="btn btn-no-bg">Learn more <i class="fas fa-chevron-right"></i></button></a>
                     </div>
 
+
                     <div style="flex-grow: 1;">
-                        <div class="mt-100 ">
-                            <iframe class="youtube-video-container" width="560" height="315" src="https://www.youtube.com/embed/3iqik_VgwZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                            <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rqEy5_W6YHQ?showinfo=0"></iframe> -->
+                        <div class="mt-100">
+                            <div class="youtube-container">
+                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3iqik_VgwZs?controls=0&modestbranding=1&autohide=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
 
-
+                    <!-- <div style="flex-grow: 1;">
+                        <div class="mt-100">
+                            <iframe class="youtube-video-container" src="https://www.youtube.com/embed/3iqik_VgwZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rqEy5_W6YHQ?showinfo=0"></iframe>
+                        </div>
+                    </div> -->
                 <!--<iframe class="youtube-video-container" allowtransparency="true" title="Wistia video player" allowFullscreen frameborder="0" scrolling="no" class="wistia_embed float-end mt-20" name="wistia_embed" src="https://fast.wistia.net/embed/iframe/klxrgfnuob" width="560" height="315"></iframe>-->
 
                 </div>
@@ -470,10 +477,12 @@
     <script src="assets_v3/js/waypoints.min.js "></script>
     <script src="assets_v3/js/wow.min.js "></script>
     <script src="assets_v3/js/main.js "></script>
+    <script src="assets_v3/js/fitvids.js"></script>
 
     <script>
         $(document).ready(function(e) {
             $('img[usemap]').rwdImageMaps();
+            $(".container").fitVids();
         });
     </script>
 </body>

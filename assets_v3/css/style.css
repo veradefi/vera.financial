@@ -531,3 +531,8 @@ img[usemap] {
 a.nft-link {
   text-decoration: none;
 }
+
+.youtube-container {
+    width: 100%;
+    margin:0px auto;
+}
