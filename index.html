@@ -1,613 +1,490 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <!-- HTML Meta Tags -->
+    <meta charset="utf-8">
+    <title>Vera: NFT Rentals & Mortgages</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Vera is the most powerful open financial platform for non-fungible token (NFT) assets." />
 
-	<!-- HTML Meta Tags -->
-	<meta charset="utf-8">
-	<title>Vera: Decentralized NFT Financial Platform</title>
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-	<meta name="description"
-		content="Vera is the most powerful open financial platform for non-fungible token (NFT) assets." />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://vera.financial">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vera">
+    <meta property="og:title" content="Vera">
+    <meta property="og:description" content="Vera is the easiest way for anyone to rent, lend, or mortgage NFTs.">
+    <meta property="og:image" content="https://vera.financial/assets/img/meta-banner.png">
 
-	<!-- Facebook Meta Tags -->
-	<meta property="og:url" content="https://vera.financial">
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Vera">
-	<meta property="og:title" content="Vera">
-	<meta property="og:description"
-		content="Vera is the most powerful open financial platform for non-fungible token (NFT) assets.">
-	<meta property="og:image" content="https://vera.financial/assets/img/meta-banner.png">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="vera.financial">
+    <meta property="twitter:url" content="https://vera.financial/">
+    <meta name="twitter:title" content="Vera">
+    <meta name="twitter:description" content="Vera is the easiest way for anyone to rent, lend, or mortgage NFTs.">
+    <meta name="twitter:image" content="https://vera.financial/assets/img/meta-banner.png">
 
-	<!-- Twitter Meta Tags -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta property="twitter:domain" content="vera.financial">
-	<meta property="twitter:url" content="https://vera.financial/">
-	<meta name="twitter:title" content="Vera">
-	<meta name="twitter:description"
-		content="Vera is the most powerful open financial platform for non-fungible token (NFT) assets.">
-	<meta name="twitter:image" content="https://vera.financial/assets/img/meta-banner.png">
+    <link rel="icon" type="favicon" href="favicon.png">
 
-	<link rel="icon" type="favicon" href="favicon.png">
-
-	<link rel="stylesheet" type="text/css" href="assets/css/header_animation.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/news_animation.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css"
-		integrity="sha384-iKbFRxucmOHIcpWdX9NTZ5WETOPm0Goy0WmfyNcl52qSYtc2Buk0NCe6jU1sWWNB" crossorigin="anonymous">
-
-	<script type="text/javascript" src="assets/js/app.js"></script>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/header.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets_v3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets_v3/css/all.min.css" rel="stylesheet" />
+    <link href="assets_v3/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets_v3/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets_v3/css/animate.css" rel="stylesheet">
+    <link href="assets_v3/css/default.css" rel="stylesheet" />
+    <link href="assets_v3/css/style.css" rel="stylesheet" />
+    <link href="assets_v3/css/responsive.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<header class="header" id="navbar">
-	<div class="container">
-		<div class="header__logo">
-			<a href="#" class="header__logo__link">
-				<mark>Vera</mark>
-				<img height="36" src="./assets/img/logo-vera-white.svg">
-
-			</a>
-		</div>
-		<nav class="header__navigation">
-			<ul>
-				<li>
-					<div class="dropdown">
-						<a href="http://coingecko.com/en/coins/vera" target="_blank">$VERA Token</a>
-						<ul class="dropdown-content">
-							<li class="gate"><a href="https://www.gate.io/en/trade/VERA_USDT" target="_blank">Trade on Gate.io</a></li>
-							<li class="uniswap"><a href="https://www.dextools.io/app/ether/pair-explorer/0xb836969acaaa7ed9505d650aaea16d07488fe6c0" target="_blank">Trade on Uniswap</a></li>
-							<li class="pancakeswap"><a href="https://www.dextools.io/app/bsc/pair-explorer/0xe875eae797a528c19c5b95b55da0b413413170ce" target="_blank">Trade on Pancake Swap</a></li>
-							<li class="chainswap"><a href="https://exchange.chainswap.com" target="_blank">ETH/BSC Token Swap</a></li>
-							<li class="chainswap"><a href="javascript:void(0)" onclick="getVera()">Get Vera</a></li>
-
-						</ul>
-					</div>
-				</li>
-
-				<!-- submenu - extra credit- add exchange logos as list items - see https://coinmarketcap.com/currencies/vera-defi/ -->
-
-				<li><a href="https://docs.vera.financial/faq">FAQ</a></li>
-				<li><a href="https://docs.vera.financial">Docs</a></li>								
-				<li><a href="https://docs.vera.financial/roadmap/">Roadmap</a></li>
-				<li><a href="https://blog.vera.financial">Blog</a></li>
-				<li><a href="#community" class="scroller">Community</a></li>				
-			</ul>
-		</nav>
-		<div class="header__link">
-			<a href="https://vera.financial/jobs" class="btn outline" target="_blank">
-				<i class="fas fa-binoculars"></i>
-				We're Hiring!
-			</a>
-		</div>
-		<div class="header__mobile">
-			<a href="#" id="menu">
-				<span></span><span></span><span></span>
-			</a>
-		</div>
-	</div>
-</header>
 
 <body>
-	<main id="ms">
+    <!-- Header area start -->
 
-		<section class="main lighter section-hero">
+    <div class="mainImage">
+        <div class="header">
+            <nav class="navbar navbar-expand-sm navbar dark-custom">
+                <div class="container">
+                    <a href="" class="navbar-brand">
+                        <img src="assets_v3/img/logo-vera-white.png" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                                    <span class="navbar-toggle-icon"><i class="fas fa-bars color_white"></i></span>
+                                </button>
+                    <div class="collapse navbar-collapse" id="navmenu">
+                        <ul class="navbar-nav ms-auto color_white">
+                            <li class="nav-item dropdown"> <a href="https://docs.vera.financial/faq" target="_blank" class="nav-link">FAQ</a></li>
+                            <li class="nav-item dropdown"> <a href="https://" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Network</a>
+                                <ul class="dropdown-menu">
+                                    <li class="coingecko"><a class="dropdown-item" href="https://www.coingecko.com/en/coins/vera" target="_blank">CoinGecko</a></li>
+                                    <li class="coinmarketcap"><a class="dropdown-item" href="https://coinmarketcap.com/currencies/vera-network/" target="_blank">Coin Market Cap</a></li>
+                                    <li class="chainswap"><a class="dropdown-item" href="https://exchange.chainswap.com/">ETH/BSC Swap</a></li>
+                                </ul>
+                                <li class="nav-item"> <a href="https://docs.vera.financial" class="nav-link" target="_blank">Docs</a></li>
+                                <li class="nav-item"><a href="https://blog.vera.financial" class="nav-link" target="_blank">Blog</a></li>
+                                <li class="nav-item"><a href="#community" class="nav-link">Community</a></li>
+                                <li class="nav-item"><a href="#ecosystem" class="nav-link">Ecosystem</a></li>
+                                <li class="nav-item"><a href="http://shop.vera.financial" class="nav-link">Swag</a></li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto d-flex">
+                            <li>
+                                <a href="https://angel.co/company/vera-labs/jobs" class="nav-link btn btn-default"> <button class="btn-custom-outline" target="_blank"><i class="fas fa-binoculars" style="margin-right: 8px;"></i> We’re Hiring!</button></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Header area end -->
 
-			<!--<video src="assets/img/hero.mp4" autoplay loop playsinline muted></video>-->
-
-			<!--<div class="alert">
-				<span id="closebtn" class="closebtn">&times;</span>
-				<p><strong>⚠️ WARNING:</strong> We'll <u>never</u> give you nor ask you for tokens, cryptos, or NFTs
-					from our website or social media. Avoid scams, stay safe!</p>
-			</div>-->
-
-			<div class="container">
-				<div class="grid">
-					<div class="grid__child left">
-						<div class="main__content">
-
-							<div class="main__content__news-banner">
-								<div class="hwrap">
-									<!-- <div class="hmove"> -->
-									<div class="hitem">
-										<a href="https://www.gate.io/en/trade/VERA_USDT"
-										target="_blank"><span class="label">NEWS</span> We're now trading on <img
-											src="https://gimg.gateimg.com/brand/16281453728345640_gateio_h_2.svg"
-											height="26" alt="Gate.io" style="margin-bottom: -6px;"></a>
-
-										<a href="https://www.dextools.io/app/ether/pair-explorer/0xb836969acaaa7ed9505d650aaea16d07488fe6c0" target="_blank"><img
-											src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Uniswap_Logo_and_Wordmark.svg/1600px-Uniswap_Logo_and_Wordmark.svg.png"
-											height="22" alt="Uniswap" style="margin-left: 6px; margin-bottom: -4px;"> 
-										</a>
-
-										<a href="https://www.dextools.io/app/bsc/pair-explorer/0xe875eae797a528c19c5b95b55da0b413413170ce" target="_blank"><img
-											src="https://landbox.io/images/pancakeswap.png"
-											height="18" alt="PancakeSwap" style="margin-left: 6px;"> 
-										</a>										
-											<!--<span class="read-more">Trade $VERA &raquo;</span></a>-->
-										</div>
-										<!-- <div class="hitem">
-											<a href="https://finance.yahoo.com/news/nft-defi-platform-vera-raises-154500703.html"
-											target="_blank"><span class="label">NEWS #2</span> We're featured on <img
-												src="https://s.yimg.com/rz/p/yahoo_finance_en-US_h_p_financev2_2.png"
-												height="18">. <span class="read-more">Read more &raquo;</span></a>
-											</div>
-											<div class="hitem">
-												<a href="https://finance.yahoo.com/news/nft-defi-platform-vera-raises-154500703.html"
-												target="_blank"><span class="label">NEWS #3</span> We're featured on <img
-													src="https://s.yimg.com/rz/p/yahoo_finance_en-US_h_p_financev2_2.png"
-													height="18">. <span class="read-more">Read more &raquo;</span></a>
-												</div> -->
-								  <!-- </div> -->
-								</div>
-							</div>
-
-							<h2 class="main__content__title cd-headline clip ">
-								Decentralized NFT<br>
-								<span class="cd-words-wrapper">
-									<b class="is-visible text-aqua">Lending</b>
-									<b class="is-hidden text-aqua">Renting</b>
-									<b class="is-hidden text-aqua">Financing</b>
-									<b class="is-hidden text-aqua">Verification</b>
-								</span> Network
-							</h2>
-						</div>
-						<div class="main__footer">
-							<h3 class="unbold">Vera is the most powerful open financial platform for non-fungible token
-								(NFT) assets.</h3>
-
-							<ul class="powered-by-list">
-								<li>
-									<h4 class="powered-by text-gray">Build on</h4>
-								</li>
-								<li><a href="https://ethereum.org/" target="_blank"><img
-											src="assets/img/blockchains/ethereum.png" height="32" loading="lazy"
-											class="image-blockchain"></a></li>
-								<li><a href="https://polkadot.network/" target="_blank"><img
-											src="assets/img/blockchains/polkadot.png" height="32" loading="lazy"
-											class="image-blockchain"></a></li>
-								<li><a href="https://solana.com/" target="_blank"><img
-											src="assets/img/blockchains/solana.png" height="32" loading="lazy"
-											class="image-blockchain"></a></li>
-								<li><a href="https://polygon.technology/" target="_blank"><img
-											src="assets/img/blockchains/polygon.png" height="32" loading="lazy"
-											class="image-blockchain"></a></li>
-								<li><a href="https://www.binance.org/" target="_blank"><img
-											src="assets/img/blockchains/bsc.png" height="32" loading="lazy"
-											class="image-blockchain"></a></li>											
-							</ul>
+        <!-- Featured are start-->
+        <div class="hero_banner p-5 text-sm-start">
+            <!-- <img src="assets_v3/img/bg_effect.png" class="banner_bg_img" alt=""> -->
+            <div class="container">
+                <div class="d-sm-flex">
+                    <div style="margin-right: 30px;">
+                        <h1 class="display-2 mt-120 wow fadeInUp" style="line-height: 1em;" data-wow-duration="1000ms" data-wow-delay="200ms">Make NFTs <br>work for you</h1>
+                        <h3>The easiest way for anyone to rent, lend, and mortgage NFTs.</h3>
+                        <a href="https://testnet.rent.vera.financial" style="margin-right:20px;"><button class="btn btn-custom">Try Testnet</button></a>
+                        <a href="#featured"><button class="btn btn-no-bg">Learn more <i class="fas fa-chevron-right"></i></button></a>
+                    </div>
 
 
-							<div class="row cta-buttons">
-								<a href="http://docs.vera.financial/" target="_blank" class="btn solid text-icon-btn">
-									<i class="fas fa-book"></i>
-									Learn more</a>
-								<!--<a href="https://docs.vera.financial/" target="_blank" class="btn solid">
-									<i class="fas fa-book" style="padding-right:10px;"></i>
-									Docs</a>-->
-								<a href="https://twitter.com/veradefi" target="_blank" class="btn solid">
-									<i class="fab fa-twitter"></i></a>
-								<a href="https://vera.financial/discord" target="_blank" class="btn solid">
-									<i class="fab fa-discord"></i></a>
+                    <div style="flex-grow: 1;">
+                        <div class="mt-100">
+                            <div class="youtube-container">
+                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3iqik_VgwZs?controls=0&modestbranding=1&autohide=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
 
-							</div>
-						</div>
-					</div>
+                    <!-- <div style="flex-grow: 1;">
+                        <div class="mt-100">
+                            <iframe class="youtube-video-container" src="https://www.youtube.com/embed/3iqik_VgwZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rqEy5_W6YHQ?showinfo=0"></iframe>
+                        </div>
+                    </div> -->
+                <!--<iframe class="youtube-video-container" allowtransparency="true" title="Wistia video player" allowFullscreen frameborder="0" scrolling="no" class="wistia_embed float-end mt-20" name="wistia_embed" src="https://fast.wistia.net/embed/iframe/klxrgfnuob" width="560" height="315"></iframe>-->
 
-					<div class="grid__child right">
-						<div class="main__video">
-						<video id="main__video__src" width="100%" height="100%" controls autoplay muted loop>
-							<source src="assets/intro.mp4" type="video/mp4">
-						  </video>
-						</div>
-						<!-- <div class="svg mainlist">
-							<span></span><span></span><span></span><span></span><span></span><span></span>
-						</div> -->
-					</div>
+                </div>
+            </div>
+            <div class="build_text text-center wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <h2 class="display-8 pt-90 pb-10 lowfi">BUILD ON</h2>
+                <img src="assets_v3/img/brand_logo1.png" alt="">
+                <img src="assets_v3/img/brand_logo2.png" alt="">
+            </div>
+        </div>
+    </div>
 
+    <!-- Header area end -->
+
+    <div class="featured mt-100" id="featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="lowfi">FEATURED</p>
+                    <h2 class="display-5 font_w">New Listings</h2>
+                    <p class="mb-50">Let’s find a collectible that is perfect for you.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <a href="https://testnet.rent.vera.financial/rent-details/39" class="nft-link">
+                    <div class="card wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="100ms">
+                        <img src="assets_v3/img/nfts/nft-colors.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ve-Punk #1</h5>
+                            <p class="card-text">Chai Zerox-ii <span><img src="assets_v3/img/check_fill.png" alt=""></span></p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="200ms">
+                    <a href="https://testnet.rent.vera.financial/rent-details/37" class="nft-link">
+                    <div class="card">
+                        <img src="assets_v3/img/nfts/nft-genesis_key.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vera Genesis Key #1</h5>
+                            <p class="card-text">Chai Zerox-ii <span><img src="assets_v3/img/check_fill.png" alt=""></span></p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://testnet.rent.vera.financial/rent-details/39" class="nft-link">
+                    <div class="card wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <img src="assets_v3/img/nfts/nft-veeple.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Veeple: 100 Days #1</h5>
+                            <p class="card-text">Chai Zerox-ii <span><img src="assets_v3/img/check_fill.png" alt=""></span></p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
+                    <a href="https://testnet.rent.vera.financial/rent-details/38" class="nft-link">
+                    <div class="card">
+                        <img src="assets_v3/img/nfts/nft-vestone.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vestone Prototype #1</h5>
+                            <p class="card-text">Chai Zerox-ii <span><img src="assets_v3/img/check_fill.png" alt=""></span></p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-md-4 offset-md-4 text-center pt-50">
+                    <a href=""> <button class="btn-customr">Explore the marketplace</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featured area end -->
+
+    <!-- Echo system are start -->
+    <div class="ecosystem" id="ecosystem">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="200ms">
+                    <p class="lowfi">TRUSTED BY THE METAVERSE </p>
+                    <h2 class="display-5 font_w mb-50">Ecosystem Partners</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="box_group mt-50">
+            <div class="inner">
+                <marquee style="z-index:2;left:380px;top:44px;" behavior="scroll" direction="left" loop="100" scrollamount="13" onmouseover="stop()" onmouseout="start()">
+                    <a href="https://finance.yahoo.com/news/nft-defi-platform-vera-raises-154500703.html" target="_blank"><img src="assets_v3/img/partners/animoca.png" alt="Animoca Brands"></a>
+                    <a href="https://blog.vera.financial/vera-partners-with-highstreet-the-worlds-first-commerce-centered-metaverse-f8ab7235f94f"><img src="assets_v3/img/partners/highstreet.png" alt="Highstreet"></a>
+                    <a href="https://blog.vera.financial/chainguardians-joins-forces-with-vera-to-bring-defi-to-the-metaverse-285e4c2ab54c" target="_blank"><img src="assets_v3/img/partners/chainguardians.png" alt="ChainGuardians"></a>
+
+                    <img src="assets_v3/img/partners/polygon.png" alt="Polygon">
+                    <img src="assets_v3/img/partners/polkastarter.png" alt="Polkastarter">
+                    <img src="assets_v3/img/partners/obtainable.png" alt="Obtainable.io">
+
+                    <a href="https://blog.vera.financial/vera-and-supraoracles-join-forces-to-automate-nft-management-and-transparency-bc9821075ffb" target="_blank"><img src="assets_v3/img/partners/supraoracles.png" alt="SupraOracles"></a>
+                    <a href="https://blog.vera.financial/vera-partners-with-solv-to-launch-defis-first-liquidity-mining-and-staking-nft-rewards-program-54b17813a2ba" target="_blank"><img src="assets_v3/img/partners/solv.png" alt="Solv Protocol"></a>
+                    <a href="http://anyswap.exchange/" target="_blank"><img src="assets_v3/img/partners/anyswap.png" alt="AnySwap"></a>
+                </marquee>
+
+            </div>
+        </div>
+
+
+        <div class="box_group_2">
+            <div class="inners">
+                <marquee behavior="scroll" direction="left" loop="100" scrollamount="15" onmouseover="stop()" onmouseout="start()">
+                    <img src="assets_v3/img/partners/totem.png" alt="Totem">
+                    <a href="https://blog.vera.financial/netvrk-joins-vera-to-enable-metaverse-mortgages-for-virtual-land-sales-3d081e292e6e" target="_blank"><img src="assets_v3/img/partners/netvrk.png" alt="Netvrk"></a>
+                    <img src="assets_v3/img/partners/spacemisfits.png" alt="SpaceMisfits">
+
+                    <a href="https://exchange.chainswap.com/" target="_blank"><img src="assets_v3/img/partners/chainswap.png" alt="ChainSwap"></a>
+                    <img src="assets_v3/img/partners/synaps.png" alt="Synaps">
+                    <img src="assets_v3/img/partners/famecast.png" alt="Famecast Media">
+
+                    <img src="assets_v3/img/partners/synaps.png" alt="Synaps">
+                    <img src="assets_v3/img/partners/gate.png" alt="Gate.io">
+                    <img src="assets_v3/img/partners/bitmart.png" alt="BitMart">
+                </marquee>
+            </div>
+        </div>
+        <div class="col-md-4 offset-md-4 text-center pt-50">
+            <a href="https://docs.vera.financial/ecosystem"> <button class=" btn-custom-outline mt-20">See all our partners</button></a>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <!-- Echo system are end -->
+
+    <!-- Vera for everyone are start -->
+    <div class="vera_sec mt-100 text-sm-start">
+        <img src="assets_v3/img/bg_dark.png" class="banner_bg" alt="">
+
+
+        <div class="icon_plc text-center pt-130 mb-20">
+            <img src="assets_v3/img/logo_icon.png" alt="">
+        </div>
+        <div class="container wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="display-5 text-center color_white">Vera is for <span class="color_gren"> everyone.</span></h2>
+                    <p class="text-center color_white">Vera allows any metaverse or marketplace to generate new revenue <br> streams, reimagine user experiences, and empower communities.</p>
+                </div>
+            </div>
+
+            <div class="row mt-50">
+                <div class="col-md-4 mb-100">
+                    <div class="txt_box text-center">
+                        <img src="assets_v3/img/rent.png" class="coin_img" alt="Rent">
+                        <h3 class="display-7">Rent</h3>
+                        <p>Borrow your favorite NFTs <br> to access unique experiences.</p>
+                        <p class="pt-20"><a href="https://testnet.rent.vera.financial/rent"><button class="btn btn-customr color_white">Try it out</button></a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-100">
+                    <div class="txt_box text-center">
+                        <img src="assets_v3/img/lend.png" class="coin_img" alt="Lend">
+                        <h3 class="display-7">Lend</h3>
+                        <p>Lend your unused NFTs <br> and earn passive income.</p>
+                        <p class="pt-20"><a href="https://testnet.rent.vera.financial/lend"><button class="btn btn-customr color_white">Try it out</button></a></p>
+                    </div>
+
+                </div>
+                <div class="col-md-4 mb-100">
+                    <div class="txt_box text-center">
+                        <img src="assets_v3/img/mortgage.png" class="coin_img" alt="Mortgage">
+                        <h3 class="display-7">Mortgage</h3>
+                        <p>Let’s help you afford your <br> favorite NFTs.</p>
+                        <p class="pt-20"><button class="btn btn-customr color_white" style="background-color:#545454;">Coming soon</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vera section are ended-->
+
+    <!-- Coming soon -->
+    <div class="coming_nft">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets_v3/img/bird.png" class="fluid wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms" alt="NFT Bird Image">
+                </div>
+                <div class="col-md-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="100ms">
+                    <p class="lowfi mt-100">COMING SOON</p>
+                    <h2 class="display-5 font_w">Need an NFT loan?</h2>
+                    <p class="txt1">Tell us which NFTs you want lenders who can offer <br>competitive financing rates. In the meantime, try out<br> our testnet marketplace supercharged by NFT <br>financing payment options!</p>
+                    <button class="btn-customr mt-20" style="background: #545454;">Coming soon</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Coming soon -->
+
+    <!-- Start Global Community -->
+    <div class="globad" id="community">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="100ms">
+                    <p class="mt-150 lowfi">POWERED BY THE PEOPLE</p>
+                    <h2 class="display-5 font_w color_white">Global Community</h2>
+                    <p class="mt-20">Learn more about Vera, get ot know our team, meet other community members, and have your say in shaping the future of open finance for NFTS.</p>
+
+                </div>
+                <div class="col-md-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="100ms">
+                    <img src="assets_v3/img/pc.png" usemap="#image-map">
+                    <map name="image-map">
+                        <area target="_blank" alt="Twitter" title="Twitter" href="https://twitter.com/veradefi" coords="341,161,252,242" shape="rect">
+                        <area target="_blank" alt="Telegram" title="Telegram" href="https://t.me/veranetwork" coords="405,164,487,248" shape="rect">
+                        <area target="_blank" alt="Instagram" title="Instagram" href="https://instagram.com/veralabs" coords="255,263,335,346" shape="rect">
+                        <area target="_blank" alt="Discord" title="Discord" href="https://discord.com/invite/fB9nuS2ktf" coords="408,268,486,344" shape="rect">
+                    </map>
 				</div>
-			</div>
-		</section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Global Community-->
 
-		<!--
-		<section class="section-investors lighter">
-			<div class="slideshow container">
-				<img src="assets/img/investors/okex-blockdream-ventures.png" loading="lazy" alt="" class="logo-image">
-				<img src="assets/img/investors/gbv-capital.png" loading="lazy" alt="" class="logo-image">
-				<img src="assets/img/investors/dfg-group.png" loading="lazy" alt="" class="logo-image">
-				<img src="assets/img/investors/au21-capital.png" loading="lazy" alt="" class="logo-image">
-				<img src="assets/img/investors/spark-digital-capital.png" loading="lazy" alt="" class="logo-image">
-				<img src="assets/img/investors/morningstar-ventures.png" loading="lazy" alt="" class="logo-image">			
-				<img src="assets/img/investors/krypital-group.png" loading="lazy" alt="" class="logo-image">				
-				<img src="assets/img/investors/shima-capital.png" loading="lazy" alt="" class="logo-image">			
-				<img src="assets/img/investors/gate.io.png" loading="lazy" alt="" class="logo-image">
-				<img src="assets/img/investors/lotus-capital.png" loading="lazy" alt="" class="logo-image">			
-				<img src="assets/img/investors/momentum6.png" loading="lazy" alt="" class="logo-image">
-				<img src="assets/img/investors/sl2-capital.png" loading="lazy" alt="" class="logo-image">
-				<img src="assets/img/investors/rok-capital.png" loading="lazy" alt="" class="logo-image">
-				<img src="assets/img/investors/kryptos-research.png" loading="lazy" alt="" class="logo-image">
-				<img src="assets/img/investors/bmw-capital.png" loading="lazy" alt="" class="logo-image">
-				<img src="assets/img/investors/moonwhale-ventures.png" loading="lazy" alt="" class="logo-image">		
-			</div>
-	  	</section>
--->
+<!-- Start FAQ-->
 
-		<section class="solution" id="about">
-			<div class="container">
+<div class="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 mb-200">
+                <p class="lowfi text-center">FAQ</p>
+                <h2 class="display-3 font_w text-center" style="margin-bottom: 80px;">In case you<br>missed anything.</h2>
+                <div class="col-lg-12">
+                    <p class="no_bg faq_select mt-20" type="button" data-bs-toggle="collapse" data-bs-target="#first" aria-expanded="false" aria-controls="collapseExample">
+                       <span class="display-6">What is Vera?</span> <span class="text-right"><i class="fas fa-chevron-down"></i></span>	
+                        <hr />
+                    </p>
+                      <div class="collapse" id="first">
+                        <div class="card card-body">
+                            Vera is a decentralized protocol built on top of major blockchains that allows essential financial services for NFTs such as renting, lending, and mortgages. Decentralized protocols are non-custodial, meaning the services never rely on the custody of any middleman or intermediary.
+                        </div>
+                      </div>
+                      <p class="no_bg faq_select mt-20" type="button" data-bs-toggle="collapse" data-bs-target="#sec" aria-expanded="false" aria-controls="collapseExample">
+                       <span class="display-6">How does NFT renting or lending work?</span> <span class="text-right"><i class="fas fa-chevron-down"></i></span>
+                        <hr>
+                    </p>
+                      <div class="collapse" id="sec">
+                        <div class="card card-body">
+                            Lending and renting allows you to list your NFT on the marketplace with your desired rental terms. Collateralized renting requires the borrower to deposit collateral to rent your NFT while non-collateralized renting does not require any collateral. Currently, our testnet supports collateralized lending and renting. Non-collateralized lending and renting will be available later in Q4 2021.
+                        </div>
+                      </div>
+                      <p class="no_bg faq_select mt-20" type="button" data-bs-toggle="collapse" data-bs-target="#third" aria-expanded="false" aria-controls="collapseExample">
+                         <span class="display-6">How does NFT financing or mortgages work?</span> <span class="text-right"><i class="fas fa-chevron-down"></i></span>
+                        <hr>
+                    </p>
+                      <div class="collapse" id="third">
+                        <div class="card card-body">
+                            There are two types of NFT financing or mortgages: seller financing and network financing. Seller financing allows you to purchase an NFT with a down payment today and you can pay the remaining amount by a deadline specified by the seller without the need to deposit collateral. Network financing allows you to purchase an NFT with a loan from Vera, and you will pay Vera back the loan plus interest over time.
+                        </div>
+                      </div>
+                      <p  class="no_bg faq_select mt-20" type="button" data-bs-toggle="collapse" data-bs-target="#fourth" aria-expanded="false" aria-controls="collapseExample">
+                         <span class="display-6">Are there any risks for my NFTs to be stolen?</span> <span class="text-right"><i class="fas fa-chevron-down"></i></span>
+                        <hr>
+                    </p>
+                      <div class="collapse" id="fourth">
+                        <div class="card card-body">
+                            NFT rentals that require collateral can be stolen. If that occurs, the lender gains the collateral which is intended to deter theft. Rentals that do not require collateral cannot be stolen because Vera's Seller Protection prevents the NFT from leaving the renter's wallet during the entire duration of the rental. On the other hand, NFT mortgages cannot be stolen even if the borrower's payments default thanks to Vera's Seller Protection technology.
+                        </div>
+                      </div>
+                      <p class="no_bg faq_select mt-20" type="button" data-bs-toggle="collapse" data-bs-target="#fifth" aria-expanded="false" aria-controls="collapseExample">
+                        <span class="display-6">Are there any hidden fees or charges?</span> <span class="text-right"><i class="fas fa-chevron-down"></i></span>
+                        
+                        <hr>
+                    </p>
+                      <div class="collapse" id="fifth">
+                        <div class="card card-body">
+                            When you rent an NFT, there are no additional fees or charges on top of your rent. Vera will take a small one-time % service fee from the lender based on the total cost of the rental. When you require a mortgage to buy an NFT, there are no additional fees or charges on top of principle plus interest you agree to pay the lender. Vera will take a small one-time % service fee from the seller based on the total revenue from the NFT sale.
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
 
-				<h2><span class="text-gradient">Vera</span> is for everyone.</h2>
-				<h4>Financial services for NFT assets you own should be safe, reliable, and accessible for everyone,
-					everywhere. Vera allows any NFT marketplace to generate new revenue streams, reimagine user
-					experiences, and empower communities.</h4>
+        </div>
+    </div>
+</div>
+<!-- END FAQ-->
 
-				<div class="grid">
-					<div class="grid__child">
-						<div class="solution__item">
-							<i class="fal fa-badge-check fa-6x text-gradient"></i>
-							<h3>Verify</h3>
-							<p>Make sure your assets are authentic.</p>
-						</div>
-					</div>
-					<div class="grid__child">
-						<div class="solution__item">
-							<i class="fal fa-coin fa-6x text-gradient"></i>
-							<h3>Finance</h3>
-							<p>Make assets more affordable for everyone.</p>
-						</div>
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__child">
-						<div class="solution__item">
-							<i class="fal fa-store text-gradient"></i>
-							<h3>Transact</h3>
-							<p>Rent out or take a loan from your assets.</p>
-						</div>
-					</div>
-					<div class="grid__child">
-						<div class="solution__item">
-							<i class="fal fa-sack-dollar text-gradient"></i>
-							<h3>Earn</h3>
-							<p>Stake your assets to earn rewards.</p>
-						</div>
-					</div>
-				</div>
-				<div class="grid">
-					<div class="grid__child">
-						<div class="solution__item">
-							<i class="fal fa-wand-magic text-gradient"></i>
-							<h3>Superpowers</h3>
-							<p>Quickly add essential financial services to any dApp without the risks and complexities.
-							</p>
-						</div>
-					</div>
-					<div class="grid__child">
-						<div class="solution__item">
-							<i class="fal fa-chart-network text-gradient"></i>
-							<h3>Decentralized</h3>
-							<p>Fully decentralized ecosystem resistant to censorship or manipulation.
-							</p>
+    <!-- Start Footer -->
+    <div class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <img src="assets_v3/img/logo-vera-white.png " alt=" ">
+                    <br>
+                    <br>
+                    <ul class="soial_media ">
+                        <li>
+                            <a href="https://twitter.com/veradefi " target="_blank "><img src="assets_v3/img/twitter.png " alt=" "></a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/veranetwork " target="_blank "><img src="assets_v3/img/telegram.png " alt=" "></a>
+                        </li>
+                        <li>
+                            <a href="https://vera.financial/discord " target="_blank "><img src="assets_v3/img/discord.png " alt=" "></a>
+                            <li>
+                                <a href="https://instagram.com/veralabs " target="_blank "><img src="assets_v3/img/instagram.png " alt=" "></a>
+                                <li>
+                                    <a href="https://blog.vera.financial " target="_blank "><img src="assets_v3/img/medium.png " alt=" "></a>
+                                </li>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 ">
+                    <h3>Build</h3>
+                    <ul class="menu_btm ">
+                        <li><a href="https://docs.vera.financial/developers ">Docs</a></li>
+                        <li><a href="https://github.com/veradefi ">Github</a></li>
+                        <li><a href="https://docs.vera.financial/discord ">Chat on Discord</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 ">
+                    <h3>Apply</h3>
+                    <ul class="menu_btm ">
+                        <li><a href="https://veraholiday.com ">NFT Holiday Game</a></li>
+                        <li><a href="https://angel.co/company/vera-labs/jobs ">Careers</a></li>
+                        <li><a href="#ecosystem ">Partnerships</a></li>
+                        <!--<li><a href="# ">Grants</a></li>-->
+                    </ul>
+                </div>
+                <div class="col-md-2 ">
+                    <h3>Learn</h3>
+                    <ul class="menu_btm ">
+                        <li><a href="https://docs.vera.financial/faq ">FAQ</a></li>
+                        <li><a href="https://blog.vera.financial ">Blog</a></li>
+                        <li><a href="https://www.youtube.com/channel/UC8bzqfAY29-XbVNdv0KpTSQ ">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 ">
+                    <h3>Other</h3>
+                    <ul class="menu_btm ">
+                        <li><a href="https://coinmarketcap.com/currencies/vera-network/ ">$VERA Token</a></li>
+                        <li><a href="http://shop.vera.financial/ ">Vera Swag</a></li> 
+                        <li><a href="disclaimer.pdf ">Disclaimer</a></li>
+                        <li><a href="https://docs.vera.financial/hub/brand-guidelines ">Brand Guidelines</a></li>
+                        <!--<li><a href="# ">Press</a></li>-->
+                    </ul>
+                </div>
+            </div>
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="vision">
-			<div class="vision-row">
-				<div class="vision-col vision-col-left gradient">
-					<h3>Our Mission</h3>
-					<h4>To connect the world so anyone can contribute and share the rewards of a growing economy.</h4>
-				</div>
-				<div class="vision-col vision-col-right">
-					<h3>Our Vision</h3>
-					<h4>To build open, secure, and powerful NFT financial products that are equally available to
-						everyone everywhere.</h4>
-				</div>
-			</div>
-		</section>
-			<!-- <div id="bg">
-			  <div class="bg circle"></div><div class="bg circle"></div><div class="bg circle"></div><div class="bg circle"></div><div class="bg circle"></div><div class="bg triangle"></div><div class="bg triangle"></div><div class="bg triangle"></div><div class="bg triangle"></div><div class="bg triangle"></div><div class="bg circle"></div><div class="bg circle"></div><div class="bg circle"></div><div class="bg circle"></div><div class="bg circle"></div><div class="bg triangle"></div><div class="bg triangle"></div><div class="bg triangle"></div><div class="bg triangle"></div><div class="bg triangle"></div>
-			</div> -->
-
-		<!--<section class="built">
-			<div class="container">
-				<h2>Built on <strong class="text-gradient">Polkadot</strong>.</h2>
-				<img alt="A solution for everyone" class="solution__image" width="960" height="760"
-					src="assets/img/blockchain.svg">
-			</div>
-		</section>-->
-		<!-- <section class="modular">
-			<div class="container">
-				<h2>Learn More About Our product: </h2>
-				<div class="grid">
-					<div class="grid__child">
-						<ul class="modular__links">
-							<li>
-								<a class="underline" href="#" target="_blank">Testnet</a>
-							</li>
-							<li>
-								<a class="underline" href="">Whitepaper (soon)</a>
-							</li>
-							<li>
-								<a class="underline" href="#" target="_blank">Docs</a>
-							</li>
-						</ul>
-					</div>
-					<div class="grid__child">
-						<div class="solutions__interest">
-							<p >Get notified when our <br>product launches:</p>
-							<a href="#getintouch" class="btn solid scroller">Subscribe</a>
-							<a class="btn solid pinker" href="#" target="_blank">Follow us</a>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section> -->
-
-		<!-- Start : Roadmap  
-		<section class="lighter" id="roadmap">
-			<div id="timeline" class="section-roadmap">
-				<div class="container">
-					<h2>Roadmap</h2>
-				</div>
-				<br><br>
-				<div class="container-timeline">
-					<div class="process-wrapper">
-						<div class="process-row">
-							<div class="process-col-left"></div>
-							<div class="process-col-right progress">
-								<div class="process-number-wrapper">
-									<div class="number-timeline">Q2 2020</div>
-									<div class="process-number-title">Activate</div>
-									<div class="process-dot progress"></div>
-								</div>
-								<div class="process-block">
-									<div class="process-triangle"></div>
-									<h3 class="heading-timeline">Activate</h3>
-									<div class="timeline-line"></div>
-									<p class="paragraph-small">Ideation and conception </p>
-									<p class="paragraph-small">Market research</p>
-									<p class="paragraph-small">Code sandboxing</p>
-								</div>
-							</div>
-						</div>
-						<div class="process-row">
-							<div class="process-col-left progress">
-								<div class="process-block">
-									<div class="process-triangle flipped"></div>
-									<h3 class="heading-timeline">Assemble</h3>
-									<div class="timeline-line"></div>
-									<p class="paragraph-small">Assemble engineering A-Team </p>
-								</div>
-								<div class="process-number-wrapper flipped">
-									<div class="number-timeline">Q3 2020</div>
-									<div class="process-number-title">Assemble </div>
-									<div class="process-dot progress"></div>
-								</div>
-							</div>
-							<div class="process-col-right progress"></div>
-						</div>
-						<div class="process-row">
-							<div class="process-col-left"></div>
-							<div class="process-col-right progress">
-								<div class="process-number-wrapper">
-									<div class="number-timeline">Q4 2020</div>
-									<div class="process-number-title">Proof of <br> Concept</div>
-									<div class="process-dot progress"></div>
-								</div>
-								<div class="process-block">
-									<div class="process-triangle"></div>
-									<h3 class="heading-timeline">Proof of Concept</h3>
-									<div class="timeline-line"></div>
-									<p class="paragraph-small">Proof of Concept implementation</p>
-									<p class="paragraph-small">Node code R&D</p>
-								</div>
-							</div>
-						</div>
-						<div class="process-row">
-							<div class="process-col-left progress">
-								<div class="process-block">
-									<div class="process-triangle flipped"></div>
-									<h3 class="heading-timeline">Release</h3>
-									<div class="timeline-line"></div>
-									<p class="paragraph-small">Release Proof of Concept contracts </p>
-								</div>
-								<div class="process-number-wrapper flipped">
-									<div class="number-timeline">Q1 2021</div>
-									<div class="process-number-title">Release</div>
-									<div class="process-dot progress"></div>
-								</div>
-							</div>
-							<div class="process-col-right progress"></div>
-						</div>
-						<div class="process-row">
-							<div class="process-col-left"></div>
-							<div class="process-col-right progress">
-								<div class="process-number-wrapper">
-									<div class="number-timeline">Q2 2021</div>
-									<div class="process-number-title">Raise</div>
-									<div class="process-dot progress"></div>
-								</div>
-								<div class="process-block">
-									<div class="process-triangle"></div>
-									<h3 class="heading-timeline">Raise</h3>
-									<div class="timeline-line"></div>
-									<p class="paragraph-small">Private token sale fundraising</p>
-
-								</div>
-							</div>
-						</div>
-						<div class="process-row">
-							<div class="process-col-left progress">
-								<div class="process-block">
-									<div class="process-triangle flipped"></div>
-									<h3 class="heading-timeline">Launch</h3>
-									<div class="timeline-line"></div>
-									<p class="paragraph-small">IDO, DEX, and CEX listing</p>
-									<p class="paragraph-small">Begin global partnership acquisition
-										campaign​</p>
-
-								</div>
-								<div class="process-number-wrapper flipped">
-									<div class="number-timeline">Q3 2021</div>
-									<div class="process-number-title">Launch</div>
-									<div class="process-dot progress"></div>
-								</div>
-							</div>
-							<div class="process-col-right"></div>
-						</div>
-						<div class="process-row">
-							<div class="process-col-left"></div>
-							<div class="process-col-right">
-								<div class="process-number-wrapper">
-									<div class="number-timeline">Q4 2021</div>
-									<div class="process-number-title">#BUIDL</div>
-									<div class="process-dot"></div>
-								</div>
-								<div class="process-block">
-									<div class="process-triangle"></div>
-									<h3 class="heading-timeline">#BUIDL</h3>
-									<div class="timeline-line"></div>
-									<p class="paragraph-small">We're updating the timeline, check back soon!</p>
-
-								</div>
-							</div>
-						</div>
+            <div class="row ">
+                <hr class="mt-100 ">
+                <div class="col-md-5 ">
+                    <p class="text-left ">Built with <span> <img src="assets_v3/img/heart.png " alt=" "> </span>from 🌎️</p>  
+                </div>
+                <div class="col-md-7 mb-30 "><p class="text-right ">Copyright © 2021 Vera Labs</p></div>
+            </div>
+        </div>
+    </div>
 
 
-						<div class="process-row">
-							<div class="process-col-left last">
-								<div class="process-block">
-									<div class="process-triangle flipped"></div>
-									<h3 class="heading-timeline">Future</h3>
-									<div class="timeline-line"></div>
-									<p class="paragraph-small">We're updating the timeline, check back soon!</p>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="assets_v3/js/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js" integrity="sha512-eZB7hQa0bRlrKMQ2njpP0d/Klu6o30Gsr8e5FUCjUT3fSlnVkm/1J14n58BuwgaMuObrGb7SvUfQuF8qFsPU4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets_v3/js/bootstrap.min.js "></script>
+    <script src="assets_v3/js/popper.js "></script>
+    <script src="assets_v3/js/owl.carousel.min.js "></script>
+    <script src="assets_v3/js/waypoints.min.js "></script>
+    <script src="assets_v3/js/wow.min.js "></script>
+    <script src="assets_v3/js/main.js "></script>
+    <script src="assets_v3/js/fitvids.js"></script>
 
-
-								</div>
-								<div class="process-number-wrapper flipped">
-									<div class="number-timeline">2022</div>
-									<div class="process-number-title">Future</div>
-									<div class="process-dot"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</section>-->
-		<section class="gradient" id="community">
-			<div class="container">
-				<div class="grid">
-					<h3 class="center">Join our Global Community</h3>
-					<h4 class="center">Learn more about Vera and have your say in shaping the future of open finance for
-						NFT assets.</h4>
-
-					<ul class="social-links">
-						<li><a href="https://vera.financial/discord" target="_blank"><i
-									class="fab fa-discord fa-4x"></i></a></li>
-						<li><a href="https://t.me/veranetwork" target="_blank"><i class="fab fa-telegram fa-4x"></i></a>
-						</li>
-						<li><a href="https://twitter.com/veradefi" target="_blank"><i
-									class="fab fa-twitter-square fa-4x"></i></a></li>
-						<li><a href="https://blog.vera.financial" target="_blank"><i
-									class="fab fa-medium fa-4x"></i></a></li>
-						<li><a href="https://github.com/veradefi" target="_blank"><i
-									class="fab fa-github fa-4x"></i></a></li>
-						<li><a href="mailto:hello@vera.financial" target="_blank"><i
-									class="fas fa-envelope-square fa-4x"></i></a></li>
-					</ul>
-
-				</div>
-			</div>
-		</section>
-
-		<footer class="footer" id="footer">
-			<div class="container">
-
-				<div class="footer__copyright">
-					<ul>
-						<li>&copy; 2021 Vera Labs 🚀🌕💗</li>
-					</ul>
-				</div>
-				<div class="footer__links">
-					<ul>
-						<li><a href="./disclaimer.pdf" target="_blank">Disclaimer</a></li>
-						<li><a href="https://docs.vera.financial/hub/brand-guidelines">Brand Guidelines</a></li>
-						<li><a href="https://vera.financial/jobs" target="_blank">Jobs</a></li>
-						<li><a href="#ms" class="scroller">Back to Top ↑</a></li>
-					</ul>
-				</div>
-			</div>
-
-		</footer>
-	</main>
-
-
-	<div id="myModal" class="modal">
-
-		<!-- Modal content -->
-		<div class="modal-content">
-		  <span class="close">&times;</span>
-		  <p>
-			<iframe
-			sandbox="allow-scripts allow-same-origin"
-			src="https://app.uniswap.org/#/swap?outputCurrency=0xd7f0cc50ad69408ae58be033f4f85d2367c2e468&inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
-			height="660px"
-			width="100%"
-			style="
-			  border: 0;
-			  margin: 0 auto;
-			  display: block;
-			  border-radius: 10px;
-			  max-width: 600px;
-			  min-width: 300px;
-			"
-			id="myId"
-			></iframe>
-		  </p>
-		</div>
-	  
-	  </div>
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GJ78PKBEF"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js',new Date());
-
-		gtag('config','G-8GJ78PKBEF');
-	</script>
-
-	<script type="text/javascript">
-		var modal = document.getElementById("myModal");
-		var span = document.getElementsByClassName("close")[0];
-
-		span.onclick = function() {
-			modal.style.display = "none";
-		}
-
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
-
-		function getVera() {
-			var modal = document.getElementById("myModal");
-			modal.style.display = "block";
-
-			console.log("get-vera-called");
-		}
-	</script>
-
+    <script>
+        $(document).ready(function(e) {
+            $('img[usemap]').rwdImageMaps();
+            $(".container").fitVids();
+        });
+    </script>
 </body>
 
 </html>
