@@ -298,6 +298,10 @@ a:hover .btn-custom-outline {
 
 /*Vera for every one*/
 
+.vera_desc {
+   padding-right: 20%;
+}
+
 .vera_sec {
     width: 100%;
     min-height: 850px;
