@@ -477,7 +477,7 @@ ul.menu_btm li a {
 }
 
 ul li.coingecko a {
-    background: url('/assets_v3/img/icons/coingecko.png') no-repeat;
+    background: url('./../img/icons/coingecko.png') no-repeat;
     background-position: 8px, 0px;
     background-size: 28px 28px;
     background-origin: padding-box;
@@ -485,7 +485,7 @@ ul li.coingecko a {
 }
 
 ul li.coinmarketcap a {
-    background: url('/assets_v3/img/icons/coinmarketcap.png') no-repeat;
+    background: url('./../img/icons/coinmarketcap.png') no-repeat;
     background-position: 8px, 0px;
     background-size: 28px 28px;
     background-origin: padding-box;
@@ -493,7 +493,7 @@ ul li.coinmarketcap a {
 }
 
 ul li.chainswap a {
-    background: url('/assets_v3/img/icons/chainswap.png') no-repeat;
+    background: url('./../img/icons/chainswap.png') no-repeat;
     background-position: 8px, 0px;
     background-size: 28px 28px;
     background-origin: padding-box;
