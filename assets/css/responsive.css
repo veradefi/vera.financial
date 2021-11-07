@@ -12,12 +12,17 @@
 
 /* LG Device :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .main-header {
+        text-align: center;
+    }
 }
  
 
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+.main-header {
+    text-align: center;
+}
 .banner_bg_img {
     top: -70px;
 }
