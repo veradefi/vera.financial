@@ -308,7 +308,7 @@
 }
 .navbar .nav-item .dropdown-menu {
     margin-top: 0;
-    text-align: center;
+    /* text-align: center; */
 }
  .hero_banner {
     text-align: center;
@@ -467,7 +467,7 @@
 }
 .navbar .nav-item .dropdown-menu {
     margin-top: 0;
-    text-align: center;
+    /* text-align: center; */
 }
  .hero_banner {
     text-align: center;
