@@ -554,3 +554,9 @@ a.nft-link {
     border-top-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
 }
+
+
+.build_text img {
+    width: 229px;
+    height: auto;
+}
