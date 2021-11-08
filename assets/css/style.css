@@ -540,3 +540,17 @@ a.nft-link {
     width: 100%;
     margin:0px auto;
 }
+
+.rounded-card {
+    border-radius: 0;
+}
+
+.rounded-card .card-body {
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.rounded-card img {
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+}
