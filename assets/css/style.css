@@ -560,3 +560,14 @@ a.nft-link {
     width: 150px;
     height: auto;
 }
+
+.top-header {
+    padding: 5px;
+    background: linear-gradient(90deg, #28F09F 0%, #20E2B0 25%, #17CAC9 50%, #0AB3E5 100%);
+}
+
+.top-header a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Nunito Sans', sans-serif;
+}
