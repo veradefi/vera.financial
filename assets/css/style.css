@@ -80,7 +80,8 @@ ul.menu_btm li a:hover {
 
 .navbar .nav-item:hover .dropdown-menu {
     display: block;
-    background: transparent;
+    border: 1px solid #28F09F;
+    background: #000;
     padding: 10px 0px;
     margin-right: 0;
     left: -8px;
@@ -500,6 +501,14 @@ ul li.chainswap a {
     padding-left: 48px;
 }
 
+ul li.contracts a {
+    background: url('./../img/brand/mark-vera-gradient_32.png') no-repeat;
+    background-position: 8px, 0px;
+    background-size: 28px 28px;
+    background-origin: padding-box;
+    padding-left: 48px;
+}
+
 .embed-responsive {
     /* position: initial; */
     /* if set to initial or anything other than relative is re-appears but is no longer responsive */
@@ -568,6 +577,10 @@ a.nft-link {
 
 .top-header a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #000;
     font-family: 'Nunito Sans', sans-serif;
+}
+
+.top-header a:hover {
+    color: #fff;
 }
