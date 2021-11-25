@@ -454,6 +454,14 @@ ul.soial_media li {
     padding: 0;
     margin-right: 5px;
     margin-left: 0;
+    margin-bottom: 12px;
+}
+
+ul.soial_media li a {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 8px;
+    border-radius: 18px;
 }
 
 .menu_btm {
